@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>荷比卢匈 9 天 8 晚 · 旅行手册</title>
+<style>
+:root{
+  --ink:#0d3b40;
+  --time:#5f7d85;
+  --teal:#12657c;
+  --price:#8a6a3b;
+  --warn:#b23b3b;
+  --meta:#7a8a8d;
+  --mark:#f3ead6;
+  --paper:#f6f4ee;
+  --panel:#fffdf8;
+  --line:rgba(13,59,64,.10);
+  --line2:rgba(13,59,64,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:PingFang SC,"Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  font-size:15px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+a{color:var(--teal)}
+
+/* ---------- top nav ---------- */
+.topnav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(246,244,238,.94);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topnav-inner{
+  max-width:720px;margin:0 auto;padding:0 10px;
+  display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;
+}
+.topnav-inner::-webkit-scrollbar{display:none}
+.topnav a{
+  flex:0 0 auto;padding:13px 11px 11px;
+  font-size:13.5px;color:var(--meta);text-decoration:none;
+  border-bottom:2px solid transparent;white-space:nowrap;
+  transition:color .16s;
+}
+.topnav a:hover{color:var(--ink)}
+.topnav a.on{color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
+
+/* ---------- cover ---------- */
+.cover{position:relative;background:#0d3b40;color:#fff;overflow:hidden}
+.cover-img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;opacity:.46;
+}
+.cover-in{
+  position:relative;z-index:2;
+  max-width:720px;margin:0 auto;padding:66px 18px 50px;
+}
+.cover .kicker{
+  font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:rgba(255,255,255,.72);margin-bottom:16px;
+}
+.cover h1{
+  font-size:31px;line-height:1.32;font-weight:700;letter-spacing:.01em;
+  margin-bottom:14px;
+}
+.cover .sub{font-size:14.5px;color:rgba(255,255,255,.82);margin-bottom:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  display:inline-block;padding:5px 12px;border-radius:999px;
+  font-size:12.5px;line-height:1.5;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.22);
+  color:#fff;
+}
+.cover-flag{
+  margin-top:26px;padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.2);
+  font-size:13px;color:rgba(255,255,255,.72);
+}
+
+/* ---------- section ---------- */
+section{padding:44px 0 8px}
+.sec-head{margin-bottom:24px}
+.sec-num{
+  font-size:11.5px;letter-spacing:.2em;color:var(--meta);
+  text-transform:uppercase;margin-bottom:7px;
+}
+.sec-head h2{
+  font-size:22.5px;font-weight:700;letter-spacing:.01em;
+  padding-bottom:11px;border-bottom:1px solid var(--line2);
+}
+.sec-intro{font-size:14.5px;color:#3d5a5e;margin-top:13px}
+
+/* ---------- day block ---------- */
+.day{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;margin-bottom:14px;overflow:hidden;
+}
+.day-top{
+  padding:16px 18px 13px;border-bottom:1px solid var(--line);
+  display:flex;gap:13px;align-items:flex-start;
+}
+.day-date{
+  flex:0 0 auto;min-width:52px;
+  font-size:12.5px;color:var(--time);font-weight:600;
+  line-height:1.4;padding-top:2px;
+}
+.day-hd h3{font-size:17px;font-weight:700;line-height:1.4}
+.day-hd .theme{font-size:13.5px;color:var(--meta);margin-top:3px}
+.day-body{padding:15px 18px 17px}
+.tl{list-style:none}
+.tl li{
+  position:relative;padding:0 0 15px 68px;
+  font-size:14.3px;line-height:1.68;
+}
+.tl li:last-child{padding-bottom:2px}
+.tl li::before{
+  content:"";position:absolute;left:57px;top:9px;bottom:-4px;
+  width:1px;background:var(--line2);
+}
+.tl li:last-child::before{display:none}
+.tl .t{
+  position:absolute;left:0;top:0;width:48px;text-align:left;
+  font-size:12.5px;color:var(--time);font-weight:600;
+  font-variant-numeric:tabular-nums;letter-spacing:-.01em;
+}
+.tl .pl{font-weight:600;color:var(--ink)}
+.tl .note{color:#4a6569;font-size:13.6px}
+.tl .dot{
+  position:absolute;left:53.5px;top:7px;
+  width:8px;height:8px;border-radius:50%;
+  background:var(--paper);border:2px solid var(--teal);
+}
+.day-meal{
+  margin-top:13px;padding-top:12px;border-top:1px dashed var(--line2);
+  font-size:13.5px;color:#4a6569;
+}
+.day-meal b{color:var(--ink);font-weight:600}
+.day-ref{
+  font-size:12.8px;color:var(--meta);margin-top:8px;
+}
+
+/* ---------- cards ---------- */
+.grid{display:grid;gap:15px}
+.card{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:16px 16px 15px;overflow:hidden;
+}
+.card .card-img-wrap{margin:-16px -16px 14px}
+.card-img{width:100%;height:172px;object-fit:cover;display:block}
+.card h3{font-size:16.5px;font-weight:700;line-height:1.42;margin-bottom:3px}
+.card .loc{font-size:12.8px;color:var(--meta);margin-bottom:9px}
+.card .why{font-size:14.2px;color:#3d5a5e;margin-bottom:11px}
+.meta-row{
+  display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;
+}
+.tag{
+  display:inline-block;padding:3.5px 9px;border-radius:5px;
+  font-size:12px;line-height:1.5;
+  border:1px solid var(--line2);color:var(--meta);
+}
+.tag.time{color:var(--time);border-color:rgba(95,125,133,.3)}
+.tag.price{color:var(--price);border-color:rgba(138,106,59,.32);font-weight:600}
+.tag.warn{color:var(--warn);border-color:rgba(178,59,59,.34)}
+.tag.go{color:var(--teal);border-color:rgba(18,101,124,.3)}
+.card dl{font-size:13.6px;line-height:1.7}
+.card dt{color:var(--meta);font-size:12.5px;margin-top:9px}
+.card dd{color:#3d5a5e;margin-left:0}
+.card .addr{font-size:13.4px;color:#3d5a5e;margin-top:9px}
+.card .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{
+  display:inline-block;padding:7px 14px;border-radius:7px;
+  font-size:13px;text-decoration:none;line-height:1.5;
+  border:1px solid var(--line2);color:var(--teal);background:transparent;
+  cursor:pointer;font-family:inherit;transition:background .15s;
+}
+.btn:hover{background:rgba(18,101,124,.06)}
+.btn.nav{border-color:rgba(18,101,124,.32)}
+mark{background:var(--mark);padding:1px 3px;border-radius:3px;color:var(--ink);font-weight:600}
+
+/* ---------- subgroups ---------- */
+.sub{margin:26px 0 13px}
+.sub:first-child{margin-top:0}
+.sub h3{
+  font-size:15.5px;font-weight:700;color:var(--ink);
+  padding-left:11px;border-left:3px solid var(--teal);line-height:1.4;
+}
+.sub p{font-size:13.5px;color:var(--meta);margin-top:7px}
+
+/* ---------- table ---------- */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:4px 0 6px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.4px;margin:0}
+.tbl th{
+  text-align:left;padding:9px 10px;font-weight:600;font-size:12.8px;
+  color:var(--meta);border-bottom:1px solid var(--line2);
+  background:rgba(13,59,64,.03);
+}
+.tbl td{padding:9px 10px;border-bottom:1px solid var(--line);color:#3d5a5e;vertical-align:top}
+.tbl td.nm{color:var(--ink);font-weight:600}
+.tbl td.pr{color:var(--price);white-space:nowrap;font-weight:600}
+
+/* ---------- tips ---------- */
+.tip{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:17px 18px;margin-bottom:13px;
+}
+.tip h3{
+  font-size:15.5px;font-weight:700;margin-bottom:10px;
+  display:flex;align-items:center;gap:8px;
+}
+.tip h3 .ic{
+  flex:0 0 auto;width:23px;height:23px;border-radius:6px;
+  background:rgba(18,101,124,.09);color:var(--teal);
+  font-size:12.5px;display:flex;align-items:center;justify-content:center;
+  font-weight:700;
+}
+.tip ul{list-style:none;font-size:14px;color:#3d5a5e}
+.tip ul li{position:relative;padding-left:15px;margin-bottom:8px}
+.tip ul li:last-child{margin-bottom:0}
+.tip ul li::before{
+  content:"";position:absolute;left:2px;top:10px;
+  width:4px;height:4px;border-radius:50%;background:var(--teal);opacity:.55;
+}
+.tip b{color:var(--ink);font-weight:600}
+
+/* ---------- unscheduled ---------- */
+.unsch{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:15px 16px;margin-bottom:12px;
+  display:flex;gap:12px;align-items:flex-start;
+  transition:border-color .16s,background .16s;
+}
+.unsch.sel{border-color:rgba(18,101,124,.42);background:rgba(18,101,124,.035)}
+.unsch input{
+  margin-top:4px;width:17px;height:17px;flex:0 0 auto;
+  accent-color:var(--teal);cursor:pointer;
+}
+.unsch-in{flex:1;min-width:0}
+.unsch-in h4{font-size:15px;font-weight:700;margin-bottom:3px;line-height:1.42}
+.unsch-in .loc{font-size:12.5px;color:var(--meta);margin-bottom:7px}
+.unsch-in .why{font-size:13.8px;color:#3d5a5e;margin-bottom:8px}
+.unsch-in .why b{color:var(--ink);font-weight:600}
+
+.genbox{
+  background:var(--panel);border:1px solid var(--line2);
+  border-radius:12px;padding:17px 18px;margin-top:18px;
+}
+.genbox h3{font-size:15px;font-weight:700;margin-bottom:7px}
+.genbox p{font-size:13.3px;color:var(--meta);margin-bottom:12px}
+textarea{
+  width:100%;min-height:172px;padding:12px;border-radius:9px;
+  border:1px solid var(--line2);background:var(--paper);
+  font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  font-size:12.4px;line-height:1.65;color:#2c4448;
+  resize:vertical;
+}
+.genacts{display:flex;gap:9px;margin-top:11px;align-items:center}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:52px;padding:30px 0 42px;
+  border-top:1px solid var(--line);
+  font-size:12.8px;color:var(--meta);
+}
+footer p{margin-bottom:7px}
+footer .src{font-size:12.2px;line-height:1.75}
+
+@media (max-width:520px){
+  .tbl{min-width:520px;font-size:13px}
+  .tbl th,.tbl td{padding:8px 9px}
+}
+@media (max-width:430px){
+  body{font-size:14.6px}
+  .cover-in{padding:52px 18px 40px}
+  .cover h1{font-size:25px}
+  .tl li{padding-left:60px}
+  .tl li::before{left:49px}
+  .tl .dot{left:45.5px}
+  .tl .t{width:42px;font-size:12px}
+  .card-img{height:152px}
+  .sec-head h2{font-size:20px}
+}
+</style>
+</head>
+<body>
+<header class="cover">
+  <img class="cover-img" src="europe-guide_files/amsterdam-canal.jpg" alt="阿姆斯特丹运河与山形墙民居">
+  <div class="cover-in">
+    <div class="kicker">Europe · Autumn 2026</div>
+    <h1>荷比卢匈 9 天 8 晚<br>四人私藏路线</h1>
+    <div class="sub">2026.10.01 — 10.09 ｜ 北京出发 ｜ 2 人同行</div>
+    <div class="chips">
+      <span class="chip">荷兰 3 晚</span>
+      <span class="chip">比利时 2 晚</span>
+      <span class="chip">卢森堡 1 晚</span>
+      <span class="chip">布达佩斯 2 晚</span>
+      <span class="chip">全程铁路</span>
+      <span class="chip">申根签证：荷兰</span>
+    </div>
+    <div class="cover-flag">回程已定：10/09 布达佩斯直飞北京 · 国航 CA720 · 13:00 起飞</div>
+  </div>
+</header>
+
+<nav class="topnav"><div class="topnav-inner">
+  <a href="#itinerary" class="on">行程</a>
+  <a href="#attractions">景点</a>
+  <a href="#experiences">体验</a>
+  <a href="#dining">餐饮住宿</a>
+  <a href="#shopping">购物</a>
+  <a href="#tips">当地贴士</a>
+  <a href="#unscheduled">未安排清单</a>
+</div></nav>
+
+<main class="wrap">
+<section id="itinerary">
+  <div class="sec-head">
+    <div class="sec-num">Module 01</div>
+    <h2>行程</h2>
+    <p class="sec-intro">九天的动线是一条<b>由西向东、只前进不回头</b>的直线：阿姆斯特丹（3 晚）→ 布鲁塞尔（2 晚）→ 卢森堡市（1 晚）→ 布达佩斯（2 晚）。全程用欧铁串联，单段最长 5 小时 50 分，其余都在 3.5 小时以内。行李只需打包一次，中途三次搬家均为「退房→车站→入住」的半日节奏，不折损白天游玩时间。</p>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/01<br>周四</div>
+      <div class="day-hd">
+        <h3>第 1 天 · 北京 → 阿姆斯特丹</h3>
+        <div class="theme">长途飞行日 · 落地即睡，倒时差</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">全天</span><span class="pl">北京首都 / 大兴机场出发</span><br><span class="note">直飞阿姆斯特丹的航班多为凌晨或午后起飞，飞行约 10 小时 30 分，抵达史基浦机场（Schiphol）为当地下午或傍晚。中欧夏令时比北京晚 6 小时。</span></li>
+        <li><span class="dot"></span><span class="t">抵达后</span><span class="pl">史基浦机场 → 市区</span><br><span class="note">机场与阿姆斯特丹中央车站之间火车每 5–10 分钟一班，车程 15–17 分钟，是最快最省心的进城方式。出关后先买 OV-chipkaart 或直接用感应式银行卡刷闸机。</span></li>
+        <li><span class="dot"></span><span class="t">19:30</span><span class="pl">酒店入住 · 水坝广场简单晚餐</span><br><span class="note">当晚不安排任何景点。放下行李后到住宿所在片区随便吃点，沿运河走 20 分钟就回酒店——第一晚的任务只有一个：把生物钟按到当地时间。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>飞机餐 &nbsp;·&nbsp; <b>晚餐：</b>水坝广场 / 中央车站一带解决<br>
+        <b>住宿：</b>阿姆斯特丹中央车站—水坝广场一带（步行可达运河区，见第 4 模块）
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/02<br>周五</div>
+      <div class="day-hd">
+        <h3>第 2 天 · 阿姆斯特丹 · 黄金时代与运河</h3>
+        <div class="theme">国立博物馆 + 梵高博物馆 + 运河游船</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:30</span><span class="pl">酒店出发 → 博物馆广场</span><br><span class="note">从中央车站一带乘 2 / 5 / 12 路电车到 Rijksmuseum 站，约 15 分钟。两座博物馆门对门，安排在同一个上午是最高效的组合。</span></li>
+        <li><span class="dot"></span><span class="t">09:00</span><span class="pl">荷兰国立博物馆 Rijksmuseum</span><br><span class="note">开门即入，直奔二楼「荣誉廊」看伦勃朗《夜巡》。9 点刚开馆时《夜巡》前几乎没人，10 点后旅行团涌入就很难拍全景。建议停留 2.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">12:00</span><span class="pl">博物馆广场草坪 · 野餐或周边简餐</span><br><span class="note">博物馆区周边餐厅价格偏高，广场草坪是本地人的日常午餐地。也可以走到 De Pijp 片区，那里选择更多也更便宜。</span></li>
+        <li><span class="dot"></span><span class="t">13:30</span><span class="pl">梵高博物馆 Van Gogh Museum</span><br><span class="note">全程按时间线陈列，200 余幅油画 + 500 幅素描，看《向日葵》《卧室》《杏花》。<span style="color:var(--warn)">必须提前在官网选定时段订票</span>，现场基本买不到。建议停留 2.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">16:30</span><span class="pl">辛格运河 / 花卉市场一带慢走</span><br><span class="note">从博物馆区往市中心方向散步，穿过 Spiegelkwartier 古董街，路过辛格运河上的漂浮花卉市场（Bloemenmarkt）。这是一段不需要买票的城市观察。</span></li>
+        <li><span class="dot"></span><span class="t">18:30</span><span class="pl">运河游船（夜航）</span><br><span class="note">从国立博物馆或安妮之家码头登船，1 小时日间/夜间巡游。黄昏时段最好——上船时天还亮，返程时运河两岸灯光已亮起，一趟看两种阿姆斯特丹。</span></li>
+        <li><span class="dot"></span><span class="t">20:30</span><span class="pl">唐人街 / 红灯区外围晚餐</span><br><span class="note">老城区餐馆密集。红灯区（De Wallen）可顺路穿过，白天看建筑、晚上看灯，但<span style="color:var(--warn)">绝对不要对橱窗拍照</span>。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>博物馆广场 / De Pijp 片区 &nbsp;·&nbsp; <b>晚餐：</b>老城区唐人街一带<br>
+        <b>住宿：</b>同前一晚，不搬家
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/03<br>周六</div>
+      <div class="day-hd">
+        <h3>第 3 天 · 桑斯安斯风车村 + 老城</h3>
+        <div class="theme">上午出城看风车 · 下午回城逛老城与安妮之家</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:00</span><span class="pl">中央车站 → 桑斯安斯风车村</span><br><span class="note">乘火车至 Zaandijk Zaanse Schans 站（约 17 分钟，需在 Zaandam 换乘一次），下车步行 10 分钟过桥即到。早班车能赶上风车村最安静的两个小时。</span></li>
+        <li><span class="dot"></span><span class="t">09:00</span><span class="pl">桑斯安斯风车村 Zaanse Schans</span><br><span class="note">保存完好的 18–19 世纪赞河工业村落，绿色木屋 + 运转中的风车 + 奶酪作坊 + 木鞋工坊，进村免费，单座风车与作坊单独收费。停留 2.5–3 小时。周六上午人已经开始多，尽量 11 点前撤离。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">返城 · 中央车站一带午餐</span><br><span class="note">回到阿姆斯特丹中央车站，车站周边与 Zeedijk 街一带吃碗印尼/亚洲面食，比老城游客区便宜。</span></li>
+        <li><span class="dot"></span><span class="t">14:30</span><span class="pl">安妮之家 Anne Frank House</span><br><span class="note"><span style="color:var(--warn)">只在官网售票、不放现场票，务必提前数周定好时段</span>。参观约 1.5 小时，路线是单向的，走完不能再回头。2026 年官网仍在实施定时入场。</span></li>
+        <li><span class="dot"></span><span class="t">16:30</span><span class="pl">约旦区 Jordaan 散步</span><br><span class="note">安妮之家出门就是约旦区——阿姆斯特丹最有生活气的老街区，窄巷、独立小店、棕色咖啡馆。这里没有必打卡点，慢慢走就是最好的玩法。</span></li>
+        <li><span class="dot"></span><span class="t">18:30</span><span class="pl">水坝广场 · 王宫外观 · 九小街</span><br><span class="note">从约旦区绕回市中心，路过西教堂（Westerkerk）、水坝广场和阿姆斯特丹王宫。九小街（De 9 Straatjes）是运河三条主水道之间的小街群，适合傍晚逛。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>中央车站 / Zeedijk 一带 &nbsp;·&nbsp; <b>晚餐：</b>约旦区或九小街一带<br>
+        <b>住宿：</b>同前一晚，不搬家
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/04<br>周日</div>
+      <div class="day-hd">
+        <h3>第 4 天 · 阿姆斯特丹 → 布鲁塞尔</h3>
+        <div class="theme">上午补漏 · 下午跨国移动 · 傍晚抵达比利时</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:30</span><span class="pl">自由补漏 · 市区最后半日</span><br><span class="note">若前两天有票没抢到，这个上午是补课窗口。也可以去阿尔伯特市场（Albert Cuypmarkt）吃一份现做荷兰松饼，或者骑一次共享自行车沿运河绕一圈——这是最「阿姆斯特丹」的方式。</span></li>
+        <li><span class="dot"></span><span class="t">11:00</span><span class="pl">退房 · 前往阿姆斯特丹中央车站</span><br><span class="note">行李寄存或直接带着走。国际列车建议提前 30 分钟到站台，Eurostar 需要预留上车时间。</span></li>
+        <li><span class="dot"></span><span class="t">12:30</span><span class="pl">阿姆斯特丹 → 布鲁塞尔南站</span><br><span class="note">Eurostar 直达，约 1 小时 50 分；Eurocity Direct（ECD）每小时一班，约 2 小时 08 分到布鲁塞尔南站，价格更低且不用订座。抵达布鲁塞尔南站（Bruxelles-Midi）后换乘地铁 2 / 6 号线进市中心。</span></li>
+        <li><span class="dot"></span><span class="t">15:30</span><span class="pl">布鲁塞尔酒店入住</span><br><span class="note">建议住在市中心大广场一带或中央车站附近，放下行李即可步行出游。</span></li>
+        <li><span class="dot"></span><span class="t">16:30</span><span class="pl">布鲁塞尔大广场 Grand-Place</span><br><span class="note">雨果称之为「欧洲最美丽的广场」。傍晚的金色阳光打上四周行会建筑的金色立面，是一天中最出片的时段。广场本身免费 24 小时开放。</span></li>
+        <li><span class="dot"></span><span class="t">18:00</span><span class="pl">撒尿小童 + 圣于贝尔长廊</span><br><span class="note">撒尿小童比想象中小得多，就在大广场步行 5 分钟处，顺路看一眼即可。圣于贝尔长廊（Galeries Royales Saint-Hubert）是 19 世纪的玻璃拱廊，巧克力店密集。</span></li>
+        <li><span class="dot"></span><span class="t">19:30</span><span class="pl">晚餐 · 青口贝 + 比利时啤酒</span><br><span class="note">布鲁塞尔的青口贝（Moules）配薯条是本地标配，主街游客区溢价明显，往小街里走两条街价格就正常了。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>阿姆斯特丹（车站一带） / 列车上 &nbsp;·&nbsp; <b>晚餐：</b>大广场周边<br>
+        <b>住宿：</b>布鲁塞尔市中心大广场 / 中央车站一带（见第 4 模块）
+      </div>
+      <div class="day-ref">跨国移动日，全天以车次为准，不排硬性景点。</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/05<br>周一</div>
+      <div class="day-hd">
+        <h3>第 5 天 · 布鲁塞尔 · 老城 + 新艺术</h3>
+        <div class="theme">皇家美术馆 · 漫画墙 · 原子塔</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">09:00</span><span class="pl">比利时皇家美术馆</span><br><span class="note">从老大师（鲁本斯、勃鲁盖尔）到马格利特，是理解比利时艺术的主线。<span style="color:var(--warn)">热门展区限流，建议提前在线预约</span>。停留约 2.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">11:30</span><span class="pl">王宫广场 · 布鲁塞尔公园 · 艺术山</span><br><span class="note">美术馆出口正对王宫广场（Place Royale），往北穿过布鲁塞尔公园（Parc de Bruxelles）走到国会柱，或者到艺术山（Mont des Arts）俯瞰老城——这是布鲁塞尔最好的免费观景台。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">老城午餐 · 圣于贝尔长廊一带</span><br><span class="note">长廊与周边小街午餐选择密集。薯条（frites）配蛋黄酱是本地国民小吃。</span></li>
+        <li><span class="dot"></span><span class="t">14:30</span><span class="pl">比利时漫画中心</span><br><span class="note">新艺术风格建筑（原 Waucquez 百货），藏 2000 余件原作，能看到《丁丁历险记》《蓝精灵》手稿。彩色楼梯是出片点。建议提前预约，停留 1.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">16:30</span><span class="pl">原子塔 Atomium</span><br><span class="note">乘地铁 6 号线至 Heysel 站。1958 年世博会留下的铁原子结构，高 102 米，可乘高速电梯直达顶层球体俯瞰全城。建议 15:00 后登塔，避开正午强光。停留约 1.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">19:00</span><span class="pl">返回市中心晚餐</span><br><span class="note">原子塔周边餐饮选择少，建议回市中心吃。餐后再回大广场看一次夜景——灯光亮起后与白天完全两种氛围。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>圣于贝尔长廊一带 &nbsp;·&nbsp; <b>晚餐：</b>大广场周边<br>
+        <b>住宿：</b>同前一晚，不搬家
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/06<br>周二</div>
+      <div class="day-hd">
+        <h3>第 6 天 · 布鲁日一日 + 转场卢森堡</h3>
+        <div class="theme">白天中世纪古城 · 傍晚跨国移动</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">07:30</span><span class="pl">布鲁塞尔 → 布鲁日</span><br><span class="note">从布鲁塞尔任意车站乘 IC 直达，约 1 小时。早班车能在 9 点前抵达，赶在旅行团之前进城。行李可寄存布鲁塞尔南站或布鲁日车站（Bounce 等寄存点约 €6/件）。</span></li>
+        <li><span class="dot"></span><span class="t">09:00</span><span class="pl">布鲁日钟楼 Belfry of Bruges</span><br><span class="note">市集广场（Markt）上的 83 米钟楼，爬 366 级狭窄台阶登顶俯瞰全城红屋顶。楼梯很陡，扶手窄，穿好走的鞋。<span style="color:var(--warn)">登塔人数受限，旺季建议一早就去排队</span>。停留约 1 小时。</span></li>
+        <li><span class="dot"></span><span class="t">10:30</span><span class="pl">市集广场 · 城堡广场 · 圣血圣殿</span><br><span class="note">从钟楼走到城堡广场（Burg）只要 3 分钟，圣血圣殿（Basilica of the Holy Blood）就在广场一角，因保存十字军东征带回的圣血遗物得名，入内免费。</span></li>
+        <li><span class="dot"></span><span class="t">11:30</span><span class="pl">布鲁日运河游船</span><br><span class="note">从水上看中世纪建筑是布鲁日最值得的一次消费，约 40 分钟、€10 左右，码头在钟楼附近。船小、低视角，春天还有天鹅贴船游过。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">午餐 · 圣血广场 / 鱼市场一带</span><br><span class="note">布鲁日的华夫饼和薯条摊随处可见。避开紧贴钟楼的第一排餐厅，往运河边小街走两条街性价比更高。</span></li>
+        <li><span class="dot"></span><span class="t">14:30</span><span class="pl">爱之湖 Minnewater · 贝居安修道院</span><br><span class="note">老城南端的爱之湖公园（Minnewater Park）与贝居安修道院（Begijnhof）是世界遗产，白墙庭院极安静。从钟楼步行约 15 分钟，游客密度骤降，是布鲁日最舒服的半小时。</span></li>
+        <li><span class="dot"></span><span class="t">16:30</span><span class="pl">返回布鲁塞尔取行李 → 转场卢森堡</span><br><span class="note">布鲁塞尔 → 卢森堡市由比利时国铁 IC 直达，约 3 小时，全天每小时一班，无需订座。注意末班车时间，建议不晚于 17:00 从布鲁塞尔出发。</span></li>
+        <li><span class="dot"></span><span class="t">20:30</span><span class="pl">抵达卢森堡市 · 入住</span><br><span class="note">卢森堡全国公共交通免费（2026 年仍执行），从车站到市区、电车公交直接上车即可，无需买票。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>布鲁日老城 &nbsp;·&nbsp; <b>晚餐：</b>卢森堡市（车站或老城一带）<br>
+        <b>住宿：</b>卢森堡市车站 / 老城一带（只有 1 晚，优先选离车站近的，见第 4 模块）
+      </div>
+      <div class="day-ref">今天动线偏紧：先布鲁日再卢森堡。若想把布鲁日玩透，可考虑把卢森堡段改乘次日上午班次——但会挤压 10/07 的卢森堡行程。</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/07<br>周三</div>
+      <div class="day-hd">
+        <h3>第 7 天 · 卢森堡 → 布达佩斯</h3>
+        <div class="theme">上午要塞老城 · 下午飞抵多瑙河明珠</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:30</span><span class="pl">博克要塞 Bock Casemates</span><br><span class="note"><span style="color:var(--warn)">仅现场购票、不开放线上预订</span>，且建议开门即到避开团队。<span style="color:var(--warn)">全年约 10:00 开放、17:00 关闭</span>，务必先到这里再逛别的。地下隧道网最深处约 40 米，石拱长廊与炮口俯瞰峡谷的视角独一无二。建议预留 1–1.5 小时。</span></li>
+        <li><span class="dot"></span><span class="t">10:00</span><span class="pl">风景走廊 Chemin de la Corniche</span><br><span class="note">被称为「欧洲最美的阳台」，沿老城南侧城墙的悬崖步道，一边是 Grund 谷地与阿尔泽特河，一边是 Bock 岬角。全程平路、免费、24 小时开放，约 30 分钟走完。</span></li>
+        <li><span class="dot"></span><span class="t">11:00</span><span class="pl">宪法广场 · 圣母主教座堂 · 威廉二世广场</span><br><span class="note">老城核心三个广场连成一片，步行即可串联。圣母主教座堂为 17 世纪哥特式，免费入内。威廉二世广场旁有市政厅与游客中心。</span></li>
+        <li><span class="dot"></span><span class="t">12:00</span><span class="pl">阿道夫桥 Pont Adolphe · 大公宫殿外观</span><br><span class="note">阿道夫桥是卢森堡地标，19 世纪建成的欧洲最大石砌拱桥之一，桥上看峡谷落差最有冲击力。大公宫殿 2026 年导览仅 7 月中至 9 月初开放，10 月只能看外观拍照。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">老城午餐 → 取行李 → 前往机场</span><br><span class="note">卢森堡市内公交免费，从市中心到卢森堡机场（LUX）约 20–25 分钟。国际航班建议提前 2 小时到。</span></li>
+        <li><span class="dot"></span><span class="t">15:30</span><span class="pl">卢森堡 → 布达佩斯（航班）</span><br><span class="note">直飞约 2 小时 10 分。布达佩斯比中欧时间再快 0 小时（同属中欧夏令时，比北京晚 6 小时），抵达后仍是傍晚，时间利用率高。</span></li>
+        <li><span class="dot"></span><span class="t">18:00</span><span class="pl">抵达布达佩斯 · 入住</span><br><span class="note">李斯特·费伦茨机场到市区：100E 机场巴士直达 Deák Ferenc tér（约 40 分钟）最快。匈牙利用福林（HUF），市区 ATM 取现比机场汇率好。</span></li>
+        <li><span class="dot"></span><span class="t">19:30</span><span class="pl">多瑙河畔夜景 · 链子桥</span><br><span class="note">第一晚不排博物馆，沿河走到塞切尼链子桥，看对岸布达城堡山与国会大厦的灯光倒影。这是布达佩斯最不费力的惊艳。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>卢森堡老城 &nbsp;·&nbsp; <b>晚餐：</b>佩斯市中心第五区一带<br>
+        <b>住宿：</b>布达佩斯佩斯第五区（Deák Ferenc tér 周边，交通枢纽，见第 4 模块）
+      </div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/08<br>周四</div>
+      <div class="day-hd">
+        <h3>第 8 天 · 布达佩斯 · 布达与佩斯</h3>
+        <div class="theme">城堡山全景 · 国会大厦 · 塞切尼温泉</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:30</span><span class="pl">前往城堡山 · 渔人堡</span><br><span class="note">从 Deák Ferenc tér 乘 16 路公交直达 Szentháromság tér（圣三一广场），约 15 分钟。渔人堡 9 点开门，早到能在回廊上独享国会大厦全景。下层回廊免费，上层观景塔收费；上午光线顺光，拍国会大厦最好。</span></li>
+        <li><span class="dot"></span><span class="t">10:00</span><span class="pl">马加什教堂</span><br><span class="note">与渔人堡紧邻，彩色釉面瓦屋顶是它的名片，红绿蓝黄四色拼成几何图案。教堂内可看彩绘玻璃与奥斯曼时期留下的伊斯兰风格装饰。停留约 1 小时。</span></li>
+        <li><span class="dot"></span><span class="t">11:30</span><span class="pl">布达城堡区 · 匈牙利国家美术馆</span><br><span class="note">从马加什教堂沿 Tárnok utca 向南步行约 300 米即到。城堡庭院免费；时间紧可只看庭院与露台，从南翼露台俯瞰链子桥与佩斯全景。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">午餐 · 城堡山脚下或过桥回佩斯</span><br><span class="note">城堡山上的餐厅偏贵。可以下山过链子桥回佩斯吃，顺便把链子桥白天版也走一遍。</span></li>
+        <li><span class="dot"></span><span class="t">14:30</span><span class="pl">匈牙利国会大厦（入内导览）</span><br><span class="note"><span style="color:var(--warn)">入内必须在官网提前预约，旺季至少提前一周</span>，且需携带护照原件、提前 30 分钟过安检。新哥特式建筑，中央穹顶高 96 米，内部陈列匈牙利圣冠。导览约 50 分钟，只接受跟团进入。</span></li>
+        <li><span class="dot"></span><span class="t">16:00</span><span class="pl">多瑙河畔鞋履雕塑 · 圣伊什特万圣殿</span><br><span class="note">国会大厦南侧 300 米就是鞋履雕塑（60 双铸铁鞋），纪念 1944–45 年被杀害的犹太人，没有铭文，驻足本身即是纪念。再走到圣伊什特万圣殿，可登顶看佩斯全景。</span></li>
+        <li><span class="dot"></span><span class="t">18:00</span><span class="pl">塞切尼温泉浴场</span><br><span class="note">乘地铁 M1 至 Széchenyi fürdő 站。欧洲最大的药用温泉浴场，新古典主义建筑 + 三个露天大池，蒸汽在傍晚的冷空气里最好看。<span style="color:var(--warn)">务必自带泳衣与拖鞋</span>，现场租借贵且排队。停留 2 小时。</span></li>
+        <li><span class="dot"></span><span class="t">20:30</span><span class="pl">晚餐 · 泡完温泉后回佩斯市中心</span><br><span class="note">温泉出来去城市公园一带或回第五区吃饭。匈牙利菜分量大，两人点一份汤 + 一份主菜常常够。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>佩斯第五区（过链子桥后） &nbsp;·&nbsp; <b>晚餐：</b>城市公园 / 第五区一带<br>
+        <b>住宿：</b>同前一晚，不搬家
+      </div>
+      <div class="day-ref">这一天是全旅程最满的一天。若体力吃紧，可把塞切尼温泉挪到 10/09 上午（但会挤压回程），或砍掉国家美术馆入内。</div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="day-top">
+      <div class="day-date">10/09<br>周五</div>
+      <div class="day-hd">
+        <h3>第 9 天 · 布达佩斯 → 北京</h3>
+        <div class="theme">上午中央市场 · 午后直飞回国</div>
+      </div>
+    </div>
+    <div class="day-body">
+      <ul class="tl">
+        <li><span class="dot"></span><span class="t">08:30</span><span class="pl">中央市场大厅 Central Market Hall</span><br><span class="note">布达佩斯最大最老的室内市场，一楼卖辣椒粉、鹅肝酱、贵腐酒（Tokaji），二楼是熟食档。买伴手礼在这里最集中，<span style="color:var(--warn)">周日休市，周五正常营业</span>。停留 1 小时。</span></li>
+        <li><span class="dot"></span><span class="t">10:00</span><span class="pl">自由桥 · 回酒店取行李</span><br><span class="note">市场紧邻绿色的自由桥（Liberty Bridge），顺路走一遍。回酒店退房，确认护照与退税单已备齐。</span></li>
+        <li><span class="dot"></span><span class="t">10:30</span><span class="pl">前往机场</span><br><span class="note">从 Deák Ferenc tér 乘 100E 机场巴士约 40 分钟到李斯特·费伦茨机场。国际长途航班至少提前 2.5 小时到。</span></li>
+        <li><span class="dot"></span><span class="t">13:00</span><span class="pl">布达佩斯 → 北京 · 国航 CA720</span><br><span class="note">直飞 9 小时 10 分，布达佩斯 13:00 起飞，次日 04:10 抵达北京首都机场 T3。当天只剩出发，不排任何景点。</span></li>
+      </ul>
+      <div class="day-meal">
+        <b>午餐：</b>机场或机上 &nbsp;·&nbsp; <b>抵达：</b>10/10 凌晨 04:10 北京首都 T3
+      </div>
+      <div class="day-ref">若不想坐凌晨落地的航班，可改 10/09 中转上海（约 12:30 出发 → 次日 10:15 到），但全程拉长到近 16 小时。</div>
+    </div>
+  </div>
+</section>
+<section id="attractions">
+  <div class="sec-head">
+    <div class="sec-num">Module 02</div>
+    <h2>景点</h2>
+    <p class="sec-intro">按四座城市分组的必去与小众清单。每张卡都给出精确的 Google 地图链接和「导航」按钮，点一下即可唤起手机地图 App 直接导航。</p>
+  </div>
+
+  <div class="sub"><h3>荷兰 · 阿姆斯特丹</h3></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/rijksmuseum.jpg" alt="荷兰国立博物馆建筑外观" loading="lazy"></div>
+      <h3>荷兰国立博物馆 <span style="font-weight:400;color:var(--meta);font-size:13px">Rijksmuseum</span></h3>
+      <div class="loc">Museumstraat 1, 1071 XX Amsterdam</div>
+      <p class="why">荷兰艺术的殿堂。伦勃朗《夜巡》与维米尔《倒牛奶的女仆》都在这里，建筑本身就是新哥特式杰作，中庭通道免费穿行。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">09:00–17:00</span>
+        <span class="tag price">约 ¥196</span>
+        <span class="tag warn">建议预约</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>2.5 小时。开门 9 点即入，此时《夜巡》前几乎无人；荣誉廊在二楼，10 点后团队涌入。</dd>
+        <dt>交通</dt>
+        <dd>电车 2 / 5 / 12 路至 Rijksmuseum 站</dd>
+      </dl>
+      <div class="addr">地址：Museumstraat 1, 1071 XX Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rijksmuseum+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('荷兰国立博物馆',52.3600,4.8852,'https://www.google.com/maps/search/?api=1&query=Rijksmuseum+Amsterdam')">导航</button>
+        <a class="btn" href="https://www.rijksmuseum.nl/en" target="_blank" rel="noopener">官网预约</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/van-gogh-museum.jpg" alt="梵高博物馆外观" loading="lazy"></div>
+      <h3>梵高博物馆 <span style="font-weight:400;color:var(--meta);font-size:13px">Van Gogh Museum</span></h3>
+      <div class="loc">Museumplein 6, 1071 DJ Amsterdam</div>
+      <p class="why">世界最大的梵高作品收藏——200 余幅油画、500 幅素描，按时间线铺开他从荷兰阴郁到法国明亮的光影蜕变。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">09:00–18:00</span>
+        <span class="tag price">约 ¥203 起</span>
+        <span class="tag warn">必须提前定时段预约</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>2.5 小时。开馆即入最安静；周五有夜场延长。</dd>
+        <dt>交通</dt>
+        <dd>电车 2 / 5 / 12 路至 Van Baerlestraat 站</dd>
+      </dl>
+      <div class="addr">地址：Museumplein 6, 1071 DJ Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Van+Gogh+Museum+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('梵高博物馆',52.3584,4.8811,'https://www.google.com/maps/search/?api=1&query=Van+Gogh+Museum+Amsterdam')">导航</button>
+        <a class="btn" href="https://www.vangoghmuseum.nl/en" target="_blank" rel="noopener">官网预约</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/anne-frank-house.jpg" alt="阿姆斯特丹运河边的老建筑" loading="lazy"></div>
+      <h3>安妮之家 <span style="font-weight:400;color:var(--meta);font-size:13px">Anne Frank House</span></h3>
+      <div class="loc">Westermarkt 20, 1016 GV Amsterdam</div>
+      <p class="why">《安妮日记》的写作地，秘密后屋（Secret Annex）原样保留，再现二战中一家人的躲藏生活。不是博物馆式的陈列，而是一段被保留下来的空间。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">09:00–22:00（季节性浮动）</span>
+        <span class="tag price">约 ¥130</span>
+        <span class="tag warn">只官网售票 · 无现场票</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1.5 小时。早 8 点前后开门即入最安静。<span style="color:var(--warn)">务必提前数周在网上锁定时段</span>，这是全程最容易订不到的景点。</dd>
+        <dt>交通</dt>
+        <dd>电车 13 / 17 路至 Westermarkt 站</dd>
+      </dl>
+      <div class="addr">地址：Westermarkt 20, 1016 GV Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Anne+Frank+House+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('安妮之家',52.3752,4.8840,'https://www.google.com/maps/search/?api=1&query=Anne+Frank+House+Amsterdam')">导航</button>
+        <a class="btn" href="https://www.annefrank.org/en/" target="_blank" rel="noopener">官网预约</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/zaanse-schans.jpg" alt="桑斯安斯风车村的传统风车" loading="lazy"></div>
+      <h3>桑斯安斯风车村 <span style="font-weight:400;color:var(--meta);font-size:13px">Zaanse Schans</span></h3>
+      <div class="loc">Schansend 7, 1509 AW Zaandam</div>
+      <p class="why">保存完好的 18–19 世纪赞河工业村落：绿色木屋、仍在运转的风车、奶酪作坊与木鞋工坊。离阿姆斯特丹最近的「荷兰明信片」场景。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">全村全天 · 作坊约 09:00–17:00</span>
+        <span class="tag price">进村免费 · 风车单座约 ¥60</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>2.5–3 小时。早上 9 点前到，11 点后团队客成批涌入。周六上午人多，尽量早撤。</dd>
+        <dt>交通</dt>
+        <dd>火车至 Zaandijk Zaanse Schans 站（约 17 分钟，需在 Zaandam 换乘），步行 10 分钟过桥即到</dd>
+      </dl>
+      <div class="addr">地址：Schansend 7, 1509 AW Zaandam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Zaanse+Schans+Zaandam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('桑斯安斯风车村',52.4739,4.8173,'https://www.google.com/maps/search/?api=1&query=Zaanse+Schans+Zaandam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>约旦区 <span style="font-weight:400;color:var(--meta);font-size:13px">Jordaan</span></h3>
+      <div class="loc">Amsterdam 西侧老街区 · 安妮之家周边</div>
+      <p class="why">小众首选。阿姆斯特丹最有生活气的老街区——窄巷、独立小店、棕色咖啡馆、运河拐角的小桥。没有必打卡点，慢慢走就是最好的玩法。</p>
+      <div class="meta-row">
+        <span class="tag go">小众</span>
+        <span class="tag time">全天</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1.5–2 小时。傍晚店铺亮灯后氛围最好；周六有 Noordermarkt 市集。</dd>
+        <dt>交通</dt>
+        <dd>电车 13 / 17 路至 Westermarkt 站，从安妮之家出门即达</dd>
+      </dl>
+      <div class="addr">地址：Jordaan, 1015 Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Jordaan+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('约旦区',52.3780,4.8810,'https://www.google.com/maps/search/?api=1&query=Jordaan+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub"><h3>比利时 · 布鲁塞尔 / 布鲁日</h3></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/brussels-grand-place.jpg" alt="布鲁塞尔大广场的行会建筑" loading="lazy"></div>
+      <h3>布鲁塞尔大广场 <span style="font-weight:400;color:var(--meta);font-size:13px">Grand-Place</span></h3>
+      <div class="loc">Grote Markt, 1000 Bruxelles</div>
+      <p class="why">雨果称之为「欧洲最美丽的广场」。四周 17 世纪行会建筑的金色立面在夕阳下几乎在发光，市政厅与国王之家分列两侧。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">全天开放</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1 小时（不含周边巷道）。傍晚金色阳光打上立面时最出片；夜晚灯光亮起后氛围完全不同，值得来两次。</dd>
+        <dt>交通</dt>
+        <dd>地铁 1 / 5 号线至 Gare Centrale 站，步行 5 分钟</dd>
+      </dl>
+      <div class="addr">地址：Grote Markt, 1000 Brussel, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Grand+Place+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('布鲁塞尔大广场',50.8467,4.3524,'https://www.google.com/maps/search/?api=1&query=Grand+Place+Bruxelles')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/bruges-belfry.jpg" alt="布鲁日钟楼与市集广场" loading="lazy"></div>
+      <h3>布鲁日钟楼 <span style="font-weight:400;color:var(--meta);font-size:13px">Belfry of Bruges</span></h3>
+      <div class="loc">Markt 7, 8000 Brugge</div>
+      <p class="why">布鲁日老城的标志。83 米高的中世纪钟楼，爬 366 级狭窄台阶登顶，可以俯瞰全城连绵的红屋顶——这是布鲁日最值的一次体力支出。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">09:30–17:00 左右</span>
+        <span class="tag price">约 ¥100</span>
+        <span class="tag warn">登塔人数受限</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1 小时。9 点前到最好，旺季排队会很久。楼梯又陡又窄，务必穿好走的鞋。</dd>
+        <dt>交通</dt>
+        <dd>布鲁塞尔乘 IC 火车约 1 小时直达布鲁日站，步行 15 分钟到市集广场</dd>
+      </dl>
+      <div class="addr">地址：Markt 7, 8000 Brugge, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Belfry+of+Bruges" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('布鲁日钟楼',51.2084,3.2247,'https://www.google.com/maps/search/?api=1&query=Belfry+of+Bruges')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/atomium.jpg" alt="布鲁塞尔原子塔" loading="lazy"></div>
+      <h3>原子塔 <span style="font-weight:400;color:var(--meta);font-size:13px">Atomium</span></h3>
+      <div class="loc">Pl. de l'Atomium 1, 1020 Bruxelles</div>
+      <p class="why">1958 年布鲁塞尔世博会留下的铁原子结构，比利时最知名的现代地标。乘高速电梯直达 102 米高的顶层球体，俯瞰整座城市。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">10:00–18:00</span>
+        <span class="tag price">约 ¥133</span>
+        <span class="tag warn">17:30 停售 / 停止入场</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1.5 小时。建议 15:00 前登塔，避开正午强光；塔下仰拍最能凸显建筑体量。内部展览偏旧，主要为登顶观景。</dd>
+        <dt>交通</dt>
+        <dd>地铁 6 号线至 Heysel 站，步行 5 分钟</dd>
+      </dl>
+      <div class="addr">地址：Pl. de l'Atomium 1, 1020 Bruxelles, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Atomium+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('原子塔',50.8949,4.3415,'https://www.google.com/maps/search/?api=1&query=Atomium+Bruxelles')">导航</button>
+        <a class="btn" href="https://atomium.be/" target="_blank" rel="noopener">官网</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>比利时皇家美术馆 <span style="font-weight:400;color:var(--meta);font-size:13px">Musées royaux des Beaux-Arts</span></h3>
+      <div class="loc">Rue de la Régence 3, 1000 Bruxelles</div>
+      <p class="why">从鲁本斯、勃鲁盖尔的老大师馆到马格利特博物馆，一条线看懂比利时艺术史。马格利特那间展厅是全馆最有辨识度的部分。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">10:00–17:00 · 周一闭馆</span>
+        <span class="tag price">约 ¥150 起</span>
+        <span class="tag warn">热门展区限流 · 建议预约</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>2.5 小时。上午光线柔和，拍画作不易反光。</dd>
+        <dt>交通</dt>
+        <dd>地铁 1 / 5 号线至 Gare Centrale / Parc 站，步行 5 分钟</dd>
+      </dl>
+      <div class="addr">地址：Rue de la Régence 3, 1000 Bruxelles, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Royal+Museums+of+Fine+Arts+of+Belgium" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('比利时皇家美术馆',50.8417,4.3581,'https://www.google.com/maps/search/?api=1&query=Royal+Museums+of+Fine+Arts+of+Belgium')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/bruges-canal.jpg" alt="布鲁日中世界运河与红砖建筑" loading="lazy"></div>
+      <h3>布鲁日历史中心 <span style="font-weight:400;color:var(--meta);font-size:13px">Historic Centre of Brugge</span></h3>
+      <div class="loc">8000 Brugge, 比利时</div>
+      <p class="why">小众角度：大多数人只在市集广场拍照就走，其实老城南端的爱之湖与贝居安修道院才是布鲁日最安静的部分——游客密度骤降，白墙庭院与天鹅水景。</p>
+      <div class="meta-row">
+        <span class="tag go">小众</span>
+        <span class="tag time">全天</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1.5 小时。从钟楼步行约 15 分钟。傍晚游客散去后，整座老城才回到它本来的样子。</dd>
+        <dt>交通</dt>
+        <dd>布鲁日站步行 15–20 分钟，或市中心免费小巴</dd>
+      </dl>
+      <div class="addr">地址：Minnewater, 8000 Brugge, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Minnewater+Park+Brugge" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('爱之湖公园',51.2010,3.2240,'https://www.google.com/maps/search/?api=1&query=Minnewater+Park+Brugge')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub"><h3>卢森堡 · 卢森堡市</h3></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/luxembourg-casemates.jpg" alt="卢森堡地下要塞的石头隧道" loading="lazy"></div>
+      <h3>博克要塞 <span style="font-weight:400;color:var(--meta);font-size:13px">Bock Casemates</span></h3>
+      <div class="loc">10 Montée de Clausen, 1343 Luxembourg</div>
+      <p class="why">卢森堡被称为「北方的直布罗陀」的原因。1644 年起由西班牙人开凿、后被沃邦扩建的地下隧道网，最深处约 40 米，曾庇护数万市民。石拱长廊与炮口俯瞰峡谷的视角独一无二。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">约 10:00–17:00</span>
+        <span class="tag price">约 ¥60–80</span>
+        <span class="tag warn">仅现场购票 · 不开放线上预订</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1–1.5 小时。<span style="color:var(--warn)">开门即到是唯一策略</span>——不能在线订票，午后团队会排长队。雨后石壁沁凉，光线反而更出片。</dd>
+        <dt>交通</dt>
+        <dd>公交 5 / 9 / 10 / 11 / 14 路至 Badanstalt 站，步行 10 分钟；或在 Pfaffenthal Um Bock 站下车</dd>
+      </dl>
+      <div class="addr">地址：10 Montee de Clausen, 1343 Grund Luxembourg</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bock+Casemates+Luxembourg" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('博克要塞',49.6116,6.1336,'https://www.google.com/maps/search/?api=1&query=Bock+Casemates+Luxembourg')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/groendchen.jpg" alt="卢森堡老城与峡谷绿地" loading="lazy"></div>
+      <h3>风景走廊 <span style="font-weight:400;color:var(--meta);font-size:13px">Chemin de la Corniche</span></h3>
+      <div class="loc">Ville-Haute, 2320 Luxembourg</div>
+      <p class="why">1898 年就被称为「欧洲最美的阳台」。沿老城南侧城墙的悬崖步道，一边是 Grund 谷地与阿尔泽特河，一边是 Bock 岬角，每一步都是不同的城市剖面。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">全天开放</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>30 分钟。全程平路，不费腿。黄昏最迷人——夕阳把峡谷与石墙晒暖，比登塔更有味道。</dd>
+        <dt>交通</dt>
+        <dd>公交 9 路至 Pfaffenthal Um Bock 站；或从博克要塞步行 5 分钟衔接</dd>
+      </dl>
+      <div class="addr">地址：Chemin de la Corniche, 2320 Luxembourg</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Chemin+de+la+Corniche+Luxembourg" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('风景走廊',49.6110,6.1350,'https://www.google.com/maps/search/?api=1&query=Chemin+de+la+Corniche+Luxembourg')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/luxembourg-pont.jpg" alt="卢森堡阿道夫桥跨越峡谷" loading="lazy"></div>
+      <h3>阿道夫桥 <span style="font-weight:400;color:var(--meta);font-size:13px">Pont Adolphe</span></h3>
+      <div class="loc">2320 Ville Haute Luxembourg</div>
+      <p class="why">卢森堡的地标。建于 20 世纪初、拥有当时世界上跨度最大的石拱，全长 153 米，横跨佩特罗斯大峡谷。站在桥中央往下看，城市被峡谷一分为二的落差最有冲击力。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">全天开放</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>20 分钟。可与佩特罗斯大峡谷、宪法广场串成一条步行线。</dd>
+        <dt>交通</dt>
+        <dd>公交 8 / 9 / 10 / 18 路至 Hamilius 站，步行 5 分钟</dd>
+      </dl>
+      <div class="addr">地址：Pont Adolphe, 2320 Luxembourg</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Pont+Adolphe+Luxembourg" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('阿道夫桥',49.6080,6.1260,'https://www.google.com/maps/search/?api=1&query=Pont+Adolphe+Luxembourg')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/luxembourg-old-town.jpg" alt="卢森堡市老城街景" loading="lazy"></div>
+      <h3>Grund 谷地 <span style="font-weight:400;color:var(--meta);font-size:13px">Grund</span></h3>
+      <div class="loc">Grund, 1611 Luxembourg</div>
+      <p class="why">小众首选。老城下方的河谷街区，阿尔泽特河从中间流过，两岸是矮房与咖啡馆。从老城可以乘免费公共电梯直达谷底，是避开游客群、看清这座城市为何建在此处的地方。</p>
+      <div class="meta-row">
+        <span class="tag go">小众</span>
+        <span class="tag time">全天</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1 小时。从风景走廊经公共电梯（Ascenseur Plateau St Esprit–Grund）下行，全程免费。傍晚河边餐厅亮灯后更惬意。</dd>
+        <dt>交通</dt>
+        <dd>老城公共电梯直达；或公交至 Stadtbredimus / Grund 站</dd>
+      </dl>
+      <div class="addr">地址：Grund, 1611 Luxembourg, 卢森堡</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Grund+Luxembourg+City" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Grund 谷地',49.6090,6.1380,'https://www.google.com/maps/search/?api=1&query=Grund+Luxembourg+City')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub"><h3>匈牙利 · 布达佩斯</h3></div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/fishermans-bastion.jpg" alt="布达佩斯渔人堡的新罗马式建筑" loading="lazy"></div>
+      <h3>渔人堡 <span style="font-weight:400;color:var(--meta);font-size:13px">Halászbástya</span></h3>
+      <div class="loc">Szentháromság tér 5, 1014 Budapest</div>
+      <p class="why">布达佩斯最负盛名的全景机位。新罗马式观景平台，七座圆锥尖塔代表七个马扎尔部落。从回廊向东北望去，多瑙河、国会大厦与佩斯天际线尽收眼底。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">09:00–19:00</span>
+        <span class="tag price">下层免费 · 上层约 ¥55</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>1–1.5 小时。上午 9:00–10:00 最好——游客少、光线顺光，国会大厦朝东的立面被阳光打亮，河面泛银波。</dd>
+        <dt>交通</dt>
+        <dd>从 Deák Ferenc tér 乘 16 路公交至 Szentháromság tér 站，约 15 分钟</dd>
+      </dl>
+      <div class="addr">地址：Szentháromság tér 5, 1014 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Bastion+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('渔人堡',47.5022,19.0347,'https://www.google.com/maps/search/?api=1&query=Fisherman%27s+Bastion+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/parliament.jpg" alt="布达佩斯国会大厦临多瑙河立面" loading="lazy"></div>
+      <h3>匈牙利国会大厦 <span style="font-weight:400;color:var(--meta);font-size:13px">Országház</span></h3>
+      <div class="loc">Kossuth Lajos tér 1-3, 1055 Budapest</div>
+      <p class="why">1904 年竣工的新哥特式建筑，中央穹顶高 96 米——这个高度同时纪念匈牙利建国（896 年）与圣伊什特万加冕（1000 年）。内部穹顶大厅陈列着超过千年的匈牙利圣冠。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">4–10 月 08:00–18:00</span>
+        <span class="tag price">非欧盟公民约 ¥498</span>
+        <span class="tag warn">必须官网预约 · 带护照原件</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>外观 40 分钟 + 内部导览 50 分钟。<span style="color:var(--warn)">旺季需提前至少一周在官网锁定英文场次</span>，提前 30 分钟到主入口过安检。</dd>
+        <dt>交通</dt>
+        <dd>地铁 M2 至 Kossuth Lajos tér 站</dd>
+      </dl>
+      <div class="addr">地址：Kossuth Lajos tér 1-3, 1055 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Hungarian+Parliament+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('匈牙利国会大厦',47.5071,19.0455,'https://www.google.com/maps/search/?api=1&query=Hungarian+Parliament+Budapest')">导航</button>
+        <a class="btn" href="https://www.parlament.hu/web/guest/home" target="_blank" rel="noopener">官网预约</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/chain-bridge.jpg" alt="塞切尼链子桥与石狮" loading="lazy"></div>
+      <h3>塞切尼链子桥 <span style="font-weight:400;color:var(--meta);font-size:13px">Széchenyi Lánchíd</span></h3>
+      <div class="loc">连接 Clark Ádám tér 与 Széchenyi István tér</div>
+      <p class="why">布达佩斯最古老的桥，1849 年竣工，全长 375 米。桥头两尊石狮由雕塑家马赖什·亚诺什创作。它不只是过河的路，也是这座城市「左右岸合一」的象征。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">全天通行</span>
+        <span class="tag">行人免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>30 分钟（含往返拍照）。夜晚灯光亮起后从布达侧桥头回望佩斯最佳；5–10 月部分周末会封闭成步行区。</dd>
+        <dt>交通</dt>
+        <dd>地铁 M1 / M2 / M3 至 Deák Ferenc tér，步行 10 分钟</dd>
+      </dl>
+      <div class="addr">地址：Széchenyi Lánchíd, 1051 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Szechenyi+Chain+Bridge+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('塞切尼链子桥',47.4989,19.0434,'https://www.google.com/maps/search/?api=1&query=Szechenyi+Chain+Bridge+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/szechenyi-bath.jpg" alt="塞切尼温泉浴场的新古典主义建筑与露天池" loading="lazy"></div>
+      <h3>塞切尼温泉浴场 <span style="font-weight:400;color:var(--meta);font-size:13px">Széchenyi Gyógyfürdő</span></h3>
+      <div class="loc">Állatkerti krt. 9-11, 1146 Budapest</div>
+      <p class="why">欧洲最大的药用温泉浴场，新古典主义建筑环绕三个露天大池。布达佩斯有 100 多处天然温泉、日均出水 7000 万升，「浴场之都」这个称号这里最能兑现。</p>
+      <div class="meta-row">
+        <span class="tag go">必去</span>
+        <span class="tag time">约 07:00–20:00（季节浮动）</span>
+        <span class="tag price">平日约 ¥160 起</span>
+        <span class="tag warn">自带泳衣与拖鞋</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>2 小时。早上 7 点去人最少，户外池在晨间冷空气里蒸汽最好看；傍晚则是另一种氛围。现场租泳衣贵且要排队。</dd>
+        <dt>交通</dt>
+        <dd>地铁 M1 至 Széchenyi fürdő 站，出站即达</dd>
+      </dl>
+      <div class="addr">地址：Budapest, Állatkerti krt. 9-11, 1146 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Szechenyi+Thermal+Bath+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('塞切尼温泉浴场',47.5186,19.0822,'https://www.google.com/maps/search/?api=1&query=Szechenyi+Thermal+Bath+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>多瑙河畔鞋履雕塑 <span style="font-weight:400;color:var(--meta);font-size:13px">Shoes on the Danube Bank</span></h3>
+      <div class="loc">Id. Antall József rkp., 1054 Budapest</div>
+      <p class="why">小众但有分量：60 双铸铁鞋履散落在河岸石堤上，尺寸从儿童鞋到成人鞋不等，纪念 1944–45 年被箭十字党民兵射杀后推入多瑙河的犹太人。雕塑没有任何铭文——正如策展人所言，「真正的纪念碑，是每位驻足者的沉默」。</p>
+      <div class="meta-row">
+        <span class="tag go">小众</span>
+        <span class="tag time">全天开放</span>
+        <span class="tag">免费</span>
+      </div>
+      <dl>
+        <dt>建议时长 / 最佳时段</dt>
+        <dd>20 分钟。就在国会大厦南侧约 300 米，从国会大厦出来的顺路一站。</dd>
+        <dt>交通</dt>
+        <dd>地铁 M2 至 Kossuth Lajos tér 站，步行 3 分钟</dd>
+      </dl>
+      <div class="addr">地址：Id. Antall József rkp., 1054 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Shoes+on+the+Danube+Bank+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('多瑙河畔鞋履雕塑',47.5039,19.0449,'https://www.google.com/maps/search/?api=1&query=Shoes+on+the+Danube+Bank+Budapest')">导航</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="experiences">
+  <div class="sec-head">
+    <div class="sec-num">Module 03</div>
+    <h2>体验</h2>
+    <p class="sec-intro">不做「拍照就走」的打卡，而是能真正进入当地生活的几件事。全部可在官网或本地平台预约，无需通过旅行社。</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/canal-cruise.jpg" alt="阿姆斯特丹运河游船" loading="lazy"></div>
+      <h3>阿姆斯特丹运河巡游</h3>
+      <div class="loc">阿姆斯特丹 · 中央车站 / 国立博物馆 / 安妮之家码头</div>
+      <p class="why">阿姆斯特丹的 17 世纪同心运河（绅士运河、皇帝运河、王子运河）是世界遗产。从水面看这座城市，才会明白为什么房子都那么窄、窗户都那么大——17 世纪的税按门面宽度收。1 小时含多语音导览，敞篷船或玻璃顶船都有。</p>
+      <div class="meta-row">
+        <span class="tag go">必体验</span>
+        <span class="tag time">约 1 小时</span>
+        <span class="tag price">约 ¥117</span>
+      </div>
+      <dl>
+        <dt>如何预约</dt>
+        <dd>各大码头现场购票或线上预订，班次密集；推荐订黄昏时段。</dd>
+        <dt>为什么在这里做、适合谁</dt>
+        <dd>零体力、全天候（雨天改玻璃顶船），适合抵达当天或走累的傍晚。雨天反而更有味道。</dd>
+      </dl>
+      <div class="addr">主要码头：Stadhouderskade 550, 1072 AE Amsterdam</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Amsterdam+Canal+Cruise" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('阿姆斯特丹运河游船',52.3570,4.8920,'https://www.google.com/maps/search/?api=1&query=Amsterdam+Canal+Cruise')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>骑行运河与冯德尔公园</h3>
+      <div class="loc">阿姆斯特丹 · 全城</div>
+      <p class="why">骑行是「最阿姆斯特丹」的移动方式。沿运河慢骑、穿过冯德尔公园（Vondelpark）环线，比坐电车多看一倍的城市细节。</p>
+      <div class="meta-row">
+        <span class="tag go">必体验</span>
+        <span class="tag time">1–2 小时</span>
+        <span class="tag price">约 ¥80 / 天</span>
+      </div>
+      <dl>
+        <dt>如何预约</dt>
+        <dd>市中心与中央车站周边多家租车店，凭护照与押金即可；部分酒店提供免费或优惠租借。</dd>
+        <dt>为什么在这里做、适合谁</dt>
+        <dd>适合体力正常、想脱离旅游动线的人。<span style="color:var(--warn)">务必走自行车道、不逆行、夜间开车灯</span>——本地骑手车速很快。</dd>
+      </dl>
+      <div class="addr">推荐起点：Vondelpark, 1071 AA Amsterdam</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Vondelpark+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('冯德尔公园',52.3580,4.8686,'https://www.google.com/maps/search/?api=1&query=Vondelpark+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>布鲁日运河游船</h3>
+      <div class="loc">布鲁日 · 钟楼附近码头</div>
+      <p class="why">40 分钟的小船穿行于中世纪运河之间，是从最低视角仰望这座城市的方式。船小、水浅，桥洞几乎擦着头顶过去，比步行多出十倍的空间体验。</p>
+      <div class="meta-row">
+        <span class="tag go">必体验</span>
+        <span class="tag time">约 40 分钟</span>
+        <span class="tag price">约 ¥80</span>
+      </div>
+      <dl>
+        <dt>如何预约</dt>
+        <dd>码头现场购票，班次密集，无需提前太久；旺季午后可能排队。</dd>
+        <dt>为什么在这里做、适合谁</dt>
+        <dd>适合所有人体力（全程坐船），尤其适合把布鲁日当作一天往返的行程——它能在最短时间里给你最完整的布鲁日印象。</dd>
+      </dl>
+      <div class="addr">码头：Markt 附近，8000 Brugge, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Bruges+Canal+Boat+Tour" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('布鲁日运河游船',51.2085,3.2250,'https://www.google.com/maps/search/?api=1&query=Bruges+Canal+Boat+Tour')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>多瑙河夜间游船</h3>
+      <div class="loc">布达佩斯 · 佩斯一侧码头（Vigadó 广场一带）</div>
+      <p class="why">布达佩斯入夜后，国会大厦、布达城堡山与链子桥的灯光在水面上揉碎成金色涟漪。这是这座城市最不费力也最难忘的一次消费。建议选黄昏时段，白天与夜景一次看够。</p>
+      <div class="meta-row">
+        <span class="tag go">必体验</span>
+        <span class="tag time">1–1.5 小时</span>
+        <span class="tag price">约 ¥160 起（含欢迎饮料）</span>
+      </div>
+      <dl>
+        <dt>如何预约</dt>
+        <dd>官网或本地平台预订，18:00 / 19:30 / 21:00 等多个班次可选。</dd>
+        <dt>为什么在这里做、适合谁</dt>
+        <dd>适合抵埠当晚或最后一晚。十月夜晚河面风大，<span style="color:var(--warn)">务必带一件防风外套</span>，甲板位比舱内值得。</dd>
+      </dl>
+      <div class="addr">登船点：Vigadó tér, 1051 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Danube+Night+Cruise+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('多瑙河夜间游船',47.4957,19.0500,'https://www.google.com/maps/search/?api=1&query=Danube+Night+Cruise+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>废墟酒吧巡礼</h3>
+      <div class="loc">布达佩斯 · 第七区犹太区（Szimpla Kert 一带）</div>
+      <p class="why">废弃建筑改造而成的酒吧群，全球第一家废墟酒吧 Szimpla Kert 就在这里的 Kazinczy 街上。旧家具、涂鸦、废旧电视机堆成的装置——它不精致，但独一无二，是布达佩斯夜生活的灵魂。</p>
+      <div class="meta-row">
+        <span class="tag go">必体验</span>
+        <span class="tag time">约 2 小时</span>
+        <span class="tag price">每杯约 ¥16–25</span>
+      </div>
+      <dl>
+        <dt>如何预约</dt>
+        <dd>无需预约，20:00 后开始热闹。从 Szimpla Kert 出发，步行 5 分钟内还有 Fugazi、Instant 等。</dd>
+        <dt>为什么在这里做、适合谁</dt>
+        <dd>适合两人结伴的夜晚。<span style="color:var(--warn)">周末深夜该区域醉酒年轻人较多，注意财物与同行节奏，避开明显混乱的场面即可</span>。整体治安不差。</dd>
+      </dl>
+      <div class="addr">地址：Kazinczy u. 14, 1075 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Szimpla+Kert+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Szimpla Kert 废墟酒吧',47.4972,19.0630,'https://www.google.com/maps/search/?api=1&query=Szimpla+Kert+Budapest')">导航</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="dining">
+  <div class="sec-head">
+    <div class="sec-num">Module 04</div>
+    <h2>餐饮住宿</h2>
+    <p class="sec-intro">这一模块才点名具体店。行程模块只给「哪一片」，这里给「哪一家、在哪、多少钱、为什么值得」。评分来源：境外餐厅与酒店均为 <b>Google 评分</b>；价格均为参考价，以平台实时价格为准。</p>
+  </div>
+
+  <div class="sub">
+    <h3>一、当地小吃 / 街头小吃</h3>
+    <p>四国的国民级小吃，逛累了随手买一份就能吃。每项点名一家代表店。</p>
+  </div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/belgian-waffle.jpg" alt="比利时华夫饼" loading="lazy"></div>
+      <h3>比利时华夫饼 <span style="font-weight:400;color:var(--meta);font-size:13px">Gaufre de Bruxelles / Liège</span></h3>
+      <div class="loc">布鲁塞尔 · 老城随处可见</div>
+      <p class="why">是什么：比利时有两种——布鲁塞尔华夫（长方形、轻盈、配鲜奶油与草莓）和列日华夫（不规则椭圆、内嵌珍珠糖、外脆内软）。口感上列日更甜更有咬劲。常见于老城小吃摊与长廊。<br>怎么点：直接说「une gaufre de Liège」，现做现吃，凉了就失去意义。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥25–45 / 份</span>
+        <span class="tag">地标：圣于贝尔长廊周边</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Maison Dandoy</b>（Rue Charles Buls 14, 1000 Bruxelles）——1829 年创立的百年老店，就在大广场旁。除华夫饼外，Speculoos 焦糖饼干也是本地招牌。<br>Google 评分：4.4（约 6000+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：Rue Charles Buls 14, 1000 Bruxelles, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Maison+Dandoy+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Maison Dandoy',50.8468,4.3534,'https://www.google.com/maps/search/?api=1&query=Maison+Dandoy+Bruxelles')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>荷兰生鲱鱼 <span style="font-weight:400;color:var(--meta);font-size:13px">Haring</span></h3>
+      <div class="loc">阿姆斯特丹 · 集市与街边鱼摊</div>
+      <p class="why">是什么：生的腌鲱鱼，配洋葱碎与酸黄瓜，可以整条仰头吞下（本地人的标准吃法），也可以夹在软面包里做成 broodje haring。口感咸鲜、油脂感重，配洋葱恰好解腻。<br>怎么点：指着摊上的鱼说「haring」，摊主会问要不要洋葱和酸黄瓜，默认都要。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥25–40 / 份</span>
+        <span class="tag">地标：阿尔伯特市场、中央车站周边</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Stubbe's Haring</b>（Singel, 1012 Amsterdam，中央车站与辛格运河边有摊）——本地人认可的鲱鱼摊，常年排队。<br>Google 评分：4.6（约 2000+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：Singel Haarlemmerstraat 附近摊位, 1012 Amsterdam</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Stubbe%27s+Haring+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Stubbe's Haring',52.3790,4.8940,'https://www.google.com/maps/search/?api=1&query=Stubbe%27s+Haring+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>斯特罗普华夫 <span style="font-weight:400;color:var(--meta);font-size:13px">Stroopwafel</span></h3>
+      <div class="loc">阿姆斯特丹 · 集市与特产店</div>
+      <p class="why">是什么：两片薄烤华夫中间夹焦糖糖浆，趁热吃时焦糖会拉丝。标准吃法是把饼搭在热咖啡杯口，让蒸汽把中间那层糖浆烘软——本地人从小这么吃。<br>怎么点：买现做的（现场压制的摊位），不要买包装好的，口感差距极大。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥20–35 / 个</span>
+        <span class="tag">地标：阿尔伯特市场</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Original Stroopwafels</b>（Albert Cuypstraat 179, 1073 Amsterdam，阿尔伯特市场内）——现场手工压制，热气腾腾。<br>Google 评分：4.7（约 1500+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：Albert Cuypstraat 179, 1073 Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Original+Stroopwafels+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Original Stroopwafels',52.3549,4.8925,'https://www.google.com/maps/search/?api=1&query=Original+Stroopwafels+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/goulash.jpg" alt="匈牙利牛肉汤" loading="lazy"></div>
+      <h3>匈牙利牛肉汤 <span style="font-weight:400;color:var(--meta);font-size:13px">Gulyás</span></h3>
+      <div class="loc">布达佩斯 · 中央市场与本地小馆</div>
+      <p class="why">是什么：红辣椒粉（paprika）炖的牛肉浓汤，实际上是一道汤而不是炖菜，配面包吃。注意区分「gulyás」（汤）和「pörkölt」（炖肉），点错会上一大盘。<br>怎么点：点「gulyásleves」就是汤。本地小馆一份约 3,200 HUF，面包通常免费续。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥60–70 / 份</span>
+        <span class="tag">地标：中央市场大厅、第七区</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Gettó Gulyás</b>（Király u. 100, 1077 Budapest）——对传统炖菜做了现代改良，牛肉汤配面包丸子是招牌。建议 18:30 前到，晚了要排队。<br>Google 评分：4.5（约 3000+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：Király u. 100, 1077 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gett%C3%B3+Guly%C3%A1s+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Gettó Gulyás',47.4989,19.0673,'https://www.google.com/maps/search/?api=1&query=Gett%C3%B3+Guly%C3%A1s+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>烟囱卷 <span style="font-weight:400;color:var(--meta);font-size:13px">Kürtőskalács</span></h3>
+      <div class="loc">布达佩斯 · 美食广场与街头</div>
+      <p class="why">是什么：面团缠在木棍上炭火烤，外层滚满糖，烤到焦糖化后敲下来成中空卷。传统撒肉桂糖，现在也有坚果、可可和 Nutella 版本。<br>怎么点：刚出炉的最好吃，凉了就变硬。折着吃，先咬两头。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥16–25 / 个</span>
+        <span class="tag">地标：Street Food Karaván</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Street Food Karaván</b>（Kazinczy u. 18, 1075 Budapest）——紧邻 Szimpla Kert 的常设美食车广场，烟囱卷、langos、汉堡都有，是废墟酒吧前的标准一餐。<br>Google 评分：4.5（约 8000+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：Kazinczy u. 18, 1075 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Street+Food+Karavan+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Street Food Karaván',47.4975,19.0628,'https://www.google.com/maps/search/?api=1&query=Street+Food+Karavan+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>卢森堡炖菜 <span style="font-weight:400;color:var(--meta);font-size:13px">Judd mat Gaardebounen</span></h3>
+      <div class="loc">卢森堡市 · 老城小馆</div>
+      <p class="why">是什么：卢森堡的国民菜——烟熏猪颈肉配蚕豆，分量扎实、口味偏咸香，是德法之间那种朴实的家常味。菜单上通常有英文注解。<br>怎么点：这道菜出餐慢，午市点它比晚市从容；配一杯本地白葡萄酒（Moselle）最地道。</p>
+      <div class="meta-row">
+        <span class="tag price">约 ¥150–200 / 份</span>
+        <span class="tag">地标：老城区 Place d'Armes 周边</span>
+      </div>
+      <dl>
+        <dt>代表店</dt>
+        <dd><b>Am Tiirmschen</b>（32 Rue de l'Eau, 1449 Luxembourg）——老城里做传统卢森堡菜的老牌小馆，本地人常来。<br>Google 评分：4.4（约 800+ 条点评）</dd>
+      </dl>
+      <div class="addr">地址：32 Rue de l'Eau, 1449 Luxembourg</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Am+Tiirmschen+Luxembourg" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Am Tiirmschen',49.6108,6.1290,'https://www.google.com/maps/search/?api=1&query=Am+Tiirmschen+Luxembourg')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub">
+    <h3>二、值得专程去</h3>
+    <p>不是「顺路吃一口」，而是值得为此调整一下路线的一餐。四个人一起点菜最划算。</p>
+  </div>
+  <div class="grid">
+
+    <div class="card">
+      <h3>The Pancake Bakery</h3>
+      <div class="loc">阿姆斯特丹 · 安妮之家北侧 3 分钟</div>
+      <p class="why">值得专程去的理由：荷兰薄饼（pannenkoek）介于可丽饼与美式煎饼之间，这里做了 70 多种咸甜口味，从培根奶酪到苹果肉桂。就在安妮之家斜对面，参观完顺路吃，是约旦区最顺的一餐。<b>出餐快、分量足、不贵</b>——行程里最不需要犹豫的一顿。</p>
+      <div class="meta-row">
+        <span class="tag price">人均约 ¥130</span>
+        <span class="tag time">09:00–20:30</span>
+        <span class="tag">Google 4.6</span>
+      </div>
+      <dl>
+        <dt>招牌</dt>
+        <dd>培根奶酪薄饼、苹果肉桂薄饼。两人点一份咸一份甜刚好。</dd>
+        <dt>为什么值得</dt>
+        <dd>位置与安妮之家无缝衔接，价格在阿姆斯特丹中心区属于少数不虚高的。</dd>
+      </dl>
+      <div class="addr">地址：Prinsengracht 191, 1015 DS Amsterdam, 荷兰</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=The+Pancake+Bakery+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('The Pancake Bakery',52.3761,4.8845,'https://www.google.com/maps/search/?api=1&query=The+Pancake+Bakery+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/belgian-chocolate.jpg" alt="比利时巧克力店橱窗" loading="lazy"></div>
+      <h3>Fin de Siècle</h3>
+      <div class="loc">布鲁塞尔 · 老城 Sainte-Catherine 一带</div>
+      <p class="why">值得专程去的理由：本地年轻人也排队的小馆，做比利时家常菜——炖牛肉、猪肘、青口贝，<b>菜量极大、价格实在</b>，还接受临时加桌。老城游客区里少数「不是游客餐厅」的地方，黑板菜单每天换。<b>不接受预订，早到或晚到都比正点排队强。</b></p>
+      <div class="meta-row">
+        <span class="tag price">人均约 ¥180</span>
+        <span class="tag time">18:00–24:00 · 周日休息</span>
+        <span class="tag">Google 4.6</span>
+      </div>
+      <dl>
+        <dt>招牌</dt>
+        <dd>啤酒炖牛肉（Carbonnade flamande）、青口贝配薯条。四人点三份主菜很可能吃不完。</dd>
+        <dt>为什么值得</dt>
+        <dd>用一个游客区地址提供非游客区的价格与分量，是布鲁塞尔性价比最突出的几家里的一家。</dd>
+      </dl>
+      <div class="addr">地址：Rue des Chartreux 9, 1000 Bruxelles, 比利时</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Fin+de+Si%C3%A8cle+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Fin de Siècle',50.8496,4.3465,'https://www.google.com/maps/search/?api=1&query=Fin+de+Si%C3%A8cle+Bruxelles')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Menza</h3>
+      <div class="loc">布达佩斯 · Liszt Ferenc tér（第六区）</div>
+      <p class="why">值得专程去的理由：布达佩斯「retro 风格」的代表餐厅，装潢是社会主义时期的匈牙利，菜却是正经的本地味。辣椒粉炖鸡配面疙瘩（Nokedli）是招牌，分量对两人来说偏大，<b>主食可以少点一份</b>。位置在安德拉什大街旁的广场上，逛完歌剧院或国家歌剧院过来正好。<b>周末务必订位。</b></p>
+      <div class="meta-row">
+        <span class="tag price">人均约 ¥120</span>
+        <span class="tag time">11:00–24:00</span>
+        <span class="tag">Google 4.4</span>
+      </div>
+      <dl>
+        <dt>招牌</dt>
+        <dd>Paprikás csirke（辣椒粉炖鸡配面疙瘩）、Gulyás 牛肉汤。</dd>
+        <dt>为什么值得</dt>
+        <dd>在旅游动线中心却保持着本地客占比；布达佩斯物价本就亲民，这一顿是全程人均最低的正餐之一。</dd>
+      </dl>
+      <div class="addr">地址：Liszt Ferenc tér 2, 1061 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Menza+Restaurant+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('Menza',47.5031,19.0620,'https://www.google.com/maps/search/?api=1&query=Menza+Restaurant+Budapest')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img class="card-img" src="europe-guide_files/new-york-cafe.jpg" alt="布达佩斯纽约咖啡馆的金色内饰" loading="lazy"></div>
+      <h3>New York Café</h3>
+      <div class="loc">布达佩斯 · Erzsébet krt.（第七区）</div>
+      <p class="why">值得专程去的理由：19 世纪末「佩斯的咖啡馆比伦敦巴黎还多」时代留下的最华丽一间，壁画、大理石柱、水晶灯，被认为曾是该报社《纽约世界报》所在地。<b>它不是靠咖啡出名，是靠空间出名</b>——这本身就是布达佩斯帝国时代的一件展品。<b>旺季排队很长，建议开门即到或下午茶时段来。</b></p>
+      <div class="meta-row">
+        <span class="tag price">人均约 ¥200（含早餐/下午茶）</span>
+        <span class="tag time">08:00–24:00</span>
+        <span class="tag">Google 4.2</span>
+      </div>
+      <dl>
+        <dt>招牌</dt>
+        <dd>匈牙利式早餐、Dobos 蛋糕、精品咖啡。价格偏高，本质是「为氛围付费」。</dd>
+        <dt>为什么值得</dt>
+        <dd>若只看一个「奥匈帝国式奢华空间」，就是这一间。适合安排在 10/08 上午或下午茶时段。</dd>
+      </dl>
+      <div class="addr">地址：Erzsébet krt. 9-11, 1073 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=New+York+Cafe+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('New York Café',47.4985,19.0706,'https://www.google.com/maps/search/?api=1&query=New+York+Cafe+Budapest')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub">
+    <h3>三、住宿推荐</h3>
+    <p>两人同行为朋友关系，全程选<b>双床房（Twin）</b>。原则是<b>一城一个基地、不中途搬家</b>——四次落脚点覆盖全部 8 晚。境外酒店评分来源为 Google，价格为平日参考价。</p>
+  </div>
+  <div class="grid">
+
+    <div class="card">
+      <h3>阿姆斯特丹 · 中央车站 / 水坝广场一带</h3>
+      <div class="loc">住 3 晚（10/01–10/04）· 出站即达，步行覆盖老城</div>
+      <p class="why">为什么住这里：抵达当天从史基浦机场坐火车直达中央车站，不用换乘；三天的行程（博物馆区、乌得勒支 / 风车村、约旦区）全部靠电车与步行覆盖；10/04 转场布鲁塞尔时也是从中央车站发车，<b>零换乘、拖行李距离最短</b>。这一带房费是全市最高，但省下的时间与体力更值。</p>
+      <div class="meta-row">
+        <span class="tag">中高档</span>
+        <span class="tag price">平日约 ¥1100–1650 / 晚</span>
+        <span class="tag">Google 4.3+</span>
+        <span class="tag warn">旺季 4–10 月价格上浮明显</span>
+      </div>
+      <dl>
+        <dt>推荐 1 · DoubleTree by Hilton Amsterdam Centraal Station</dt>
+        <dd>距中央车站步行 5 分钟，双床房空间在同价位里偏大，早餐品类多。<b>Google 评分 4.4（约 7000+ 条点评）</b>。约 ¥1625 / 晚起。</dd>
+        <dt>推荐 2 · NH City Centre Amsterdam</dt>
+        <dd>距水坝广场步行 5 分钟，部分房型有运河景观，房间干净宽敞。国庆窗口价约 ¥1169 / 晚起。</dd>
+        <dt>推荐 3 · ibis Styles Amsterdam Central Station</dt>
+        <dd>中央车站步行 3 分钟，部分房型正对运河，隔音做得不错。<b>预算优先时选它</b>，约 ¥1000 / 晚起。</dd>
+        <dt>动线说明</dt>
+        <dd>三晚不换酒店。10/02、10/03 两天都以这里为圆心往返。</dd>
+      </dl>
+      <div class="addr">片区：Amsterdam Centraal 或 Dam Square 周边，1012 Amsterdam</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=hotels+near+Amsterdam+Centraal+Station" target="_blank" rel="noopener">Google 地图</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>布鲁塞尔 · 大广场 / 中央车站一带</h3>
+      <div class="loc">住 2 晚（10/04–10/06）· 老城核心，步行可达全部景点</div>
+      <p class="why">为什么住这里：布鲁塞尔的景点高度集中在老城，大广场步行 10 分钟范围内几乎覆盖全部必去项；地铁 1/5 号线在中央车站交汇，去原子塔（6 号线）、去布鲁日（任意车站 IC）都方便。10/06 从布鲁塞尔出发去布鲁日再去卢森堡，<b>把行李寄存在南站可以省一趟回程</b>。</p>
+      <div class="meta-row">
+        <span class="tag">中档</span>
+        <span class="tag price">平日约 ¥900–1300 / 晚</span>
+        <span class="tag">Google 4.4+</span>
+      </div>
+      <dl>
+        <dt>推荐 1 · Novotel Brussels off Grand Place</dt>
+        <dd>距大广场步行 2 分钟，双床房标准间面积舒适，电梯与行李通道顺畅。<b>Google 评分 4.4（约 4000+ 条点评）</b>。约 ¥1200 / 晚起。</dd>
+        <dt>推荐 2 · Ibis Brussels off Grand Place</dt>
+        <dd>同集团的经济档，位置几乎一样但价格低约三成，房间偏小。预算优先时选它，约 ¥850 / 晚起。</dd>
+        <dt>动线说明</dt>
+        <dd>两晚不换酒店。10/05 全天在布鲁塞尔，10/06 早上退房寄存行李后去布鲁日，傍晚返程直接南下卢森堡。</dd>
+        <dt>安全提示</dt>
+        <dd><span style="color:var(--warn)">大广场周边与布鲁塞尔南站周边扒手较多</span>，背包背在身前，证件与现金贴身放。南站夜间尽量乘地铁或打车，不要步行穿行。</dd>
+      </dl>
+      <div class="addr">片区：Grand-Place / Gare Centrale 周边，1000 Bruxelles</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=hotels+near+Grand+Place+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>卢森堡市 · 火车站 / 老城一带</h3>
+      <div class="loc">住 1 晚（10/06–10/07）· 只住一晚，优先离车站近</div>
+      <p class="why">为什么住这里：卢森堡只停一晚，且第二天下午要赶飞机（乘公交去 LUX 机场）。<b>这一晚的核心不是舒适度，而是「晚到能快速入住、早走不折腾」</b>。卢森堡全国公共交通免费，所以即使住在车站一带，去老城景点也是几站免费公交的事。</p>
+      <div class="meta-row">
+        <span class="tag">中档</span>
+        <span class="tag price">平日约 ¥1000–1400 / 晚</span>
+        <span class="tag">Google 4.3+</span>
+        <span class="tag go">全国公交免费</span>
+      </div>
+      <dl>
+        <dt>推荐 1 · Novotel Luxembourg Centre</dt>
+        <dd>位于老城与车站之间，步行 10 分钟到 Gare、15 分钟到 Place d'Armes，位置最均衡。<b>Google 评分 4.4（约 2500+ 条点评）</b>。约 ¥1300 / 晚起。</dd>
+        <dt>推荐 2 · Hotel Empire</dt>
+        <dd>就在中央车站对面，出站即达，适合 20:30 抵达当天最快落宿。房间简洁。约 ¥950 / 晚起。</dd>
+        <dt>动线说明</dt>
+        <dd>只此一晚，不涉及搬家。10/07 上午行李寄存在酒店或车站，下午回来取后再去机场。</dd>
+      </dl>
+      <div class="addr">片区：Gare Centrale / Ville-Haute 周边，L-1611 Luxembourg</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=hotels+near+Luxembourg+Gare+Centrale" target="_blank" rel="noopener">Google 地图</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>布达佩斯 · 佩斯第五区（Deák Ferenc tér）</h3>
+      <div class="loc">住 2 晚（10/07–10/09）· 三线地铁交汇，去机场最方便</div>
+      <p class="why">为什么住这里：第五区是布达佩斯的绝对市中心——国会大厦、圣伊什特万圣殿、多瑙河岸、瓦茨街全在步行范围。更重要的是 <b>Deák Ferenc tér 是 M1/M2/M3 三线交汇点，16 路公交上城堡山、100E 机场巴士直达机场</b>，最后一天 10:30 出发赶 13:00 的回国航班最稳。布达佩斯物价亲民，同预算在这里能住到更好的房。</p>
+      <div class="meta-row">
+        <span class="tag">中档 / 性价比优先</span>
+        <span class="tag price">平日约 ¥600–1000 / 晚</span>
+        <span class="tag">Google 4.4+</span>
+        <span class="tag go">全程物价最低</span>
+      </div>
+      <dl>
+        <dt>推荐 1 · NH Collection Budapest City Center</dt>
+        <dd>第五区核心，步行可达多瑙河与圣伊什特万圣殿，双床房面积大、隔音好，早餐品质稳定。<b>Google 评分 4.5（约 4000+ 条点评）</b>。约 ¥950 / 晚起。</dd>
+        <dt>推荐 2 · Maverick Athenaeum</dt>
+        <dd>第五区性价比之选，位于一栋历史建筑内，中庭挑高漂亮，双人间价格明显低于连锁品牌。约 ¥620 / 晚起。</dd>
+        <dt>推荐 3 · IntercityHotel Budapest</dt>
+        <dd>火车站（Keleti）旁，连锁品质稳定，往返车站最方便。约 ¥700 / 晚起。</dd>
+        <dt>动线说明</dt>
+        <dd>两晚不换酒店。10/08 全天在布达与佩斯之间往返，10/09 退房后直接乘 100E 去机场。</dd>
+      </dl>
+      <div class="addr">片区：District V / Deák Ferenc tér 周边，1052 Budapest</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=hotels+near+Deak+Ferenc+ter+Budapest" target="_blank" rel="noopener">Google 地图</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="shopping">
+  <div class="sec-head">
+    <div class="sec-num">Module 05</div>
+    <h2>购物</h2>
+    <p class="sec-intro">四国的购物区与伴手礼。原则很简单：<b>能吃的当场买、能带的选择在最后一站集中买</b>——布达佩斯物价最低，是全程最适合收尾囤伴手礼的城市。</p>
+  </div>
+
+  <div class="sub"><h3>购物区 / 商圈</h3></div>
+  <div class="grid">
+
+    <div class="card">
+      <h3>九小街 <span style="font-weight:400;color:var(--meta);font-size:13px">De 9 Straatjes</span></h3>
+      <div class="loc">阿姆斯特丹 · 三条主运河之间的九条横街</div>
+      <p class="why">阿姆斯特丹最值得逛的小店群：古着、独立设计、手作饰品、复古海报、小众香水。没有大牌旗舰店，全是需要慢慢翻的铺子，比卡尔弗街（Kalverstraat）那种连锁大街有意思得多。</p>
+      <div class="meta-row">
+        <span class="tag go">推荐</span>
+        <span class="tag time">约 10:00–18:00（周日多数 12:00 后开）</span>
+        <span class="tag">免费逛</span>
+      </div>
+      <div class="addr">地址：Wolvenstraat / Hartenstraat 一带, 1016 Amsterdam</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=De+9+Straatjes+Amsterdam" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('九小街',52.3700,4.8840,'https://www.google.com/maps/search/?api=1&query=De+9+Straatjes+Amsterdam')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>圣于贝尔长廊 <span style="font-weight:400;color:var(--meta);font-size:13px">Galeries Royales Saint-Hubert</span></h3>
+      <div class="loc">布鲁塞尔 · 大广场北侧</div>
+      <p class="why">1847 年落成的欧洲最早玻璃拱廊之一，两侧全是巧克力店、书店与老牌咖啡馆。<b>比利时的巧克力品牌在这里最集中</b>，一次可以对比好几家再决定买哪盒。</p>
+      <div class="meta-row">
+        <span class="tag go">推荐</span>
+        <span class="tag time">约 10:00–20:00</span>
+        <span class="tag">免费逛</span>
+      </div>
+      <div class="addr">地址：Rue du Marché aux Herbes / Rue de l'Écuyer, 1000 Bruxelles</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Galeries+Royales+Saint-Hubert+Bruxelles" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('圣于贝尔长廊',50.8477,4.3545,'https://www.google.com/maps/search/?api=1&query=Galeries+Royales+Saint-Hubert+Bruxelles')">导航</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>中央市场大厅 <span style="font-weight:400;color:var(--meta);font-size:13px">Central Market Hall</span></h3>
+      <div class="loc">布达佩斯 · 自由桥佩斯一侧桥头</div>
+      <p class="why">布达佩斯最大、最老的室内市场，一层是辣椒粉、鹅肝酱、贵腐酒、香肠，二层是熟食档与手工艺品。<b>这里是全程买伴手礼效率最高的一个点</b>——辣椒粉与 Tokaji 贵腐酒在本地买，价格比机场便宜一半以上。</p>
+      <div class="meta-row">
+        <span class="tag go">推荐</span>
+        <span class="tag time">06:00–18:00 · 周六至 15:00</span>
+        <span class="tag warn">周日休市 · 10/09 是周五正常营业</span>
+      </div>
+      <div class="addr">地址：Vámház krt. 1-3, 1093 Budapest, 匈牙利</div>
+      <div class="acts">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Central+Market+Hall+Budapest" target="_blank" rel="noopener">Google 地图</a>
+        <button class="btn nav" onclick="openVenueNav('中央市场大厅',47.4869,19.0586,'https://www.google.com/maps/search/?api=1&query=Central+Market+Hall+Budapest')">导航</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub"><h3>特色伴手礼</h3></div>
+  <div class="tbl-wrap"><table class="tbl">
+    <thead>
+      <tr><th>伴手礼</th><th>是什么 / 怎么挑</th><th>去哪买</th><th>参考价</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="nm">荷兰焦糖华夫</td>
+        <td>两片薄华夫夹焦糖浆。买<b>铁盒装</b>比纸袋更抗压；认准「Gouda / Dutch」产地标签</td>
+        <td>阿尔伯特市场、超市 Albert Heijn</td>
+        <td class="pr">¥30–60</td>
+      </tr>
+      <tr>
+        <td class="nm">荷兰奶酪</td>
+        <td>Gouda 与 Edam 最常见。真空小包装可带，<b>未灭菌生奶奶酪部分国家有限制</b></td>
+        <td>阿尔伯特市场、史基浦机场</td>
+        <td class="pr">¥50–150</td>
+      </tr>
+      <tr>
+        <td class="nm">比利时巧克力</td>
+        <td>认准 praline（夹心）与 couverture（调温）两类。Neuhaus、Pierre Marcolini、Godiva 都在长廊与老城</td>
+        <td>圣于贝尔长廊、大广场周边</td>
+        <td class="pr">¥80–300 / 盒</td>
+      </tr>
+      <tr>
+        <td class="nm">比利时啤酒</td>
+        <td>修道院啤酒（Trappist）认准六角标。<b>玻璃瓶托运需缓冲，建议买 330ml 小瓶</b></td>
+        <td>老城超市 Delhaize、长廊酒类店</td>
+        <td class="pr">¥15–60 / 瓶</td>
+      </tr>
+      <tr>
+        <td class="nm">Speculoos 焦糖饼干</td>
+        <td>肉桂味脆饼，配咖啡极好。Lotus 是超市款，Dandoy 是手工款</td>
+        <td>Maison Dandoy、超市</td>
+        <td class="pr">¥25–70</td>
+      </tr>
+      <tr>
+        <td class="nm">匈牙利辣椒粉</td>
+        <td>认准「Édes」（甜）与「Csípős」（辣）两种，甜味是炖菜的基底。<b>密封罐装比纸包好带</b></td>
+        <td>中央市场大厅一层</td>
+        <td class="pr">¥20–50</td>
+      </tr>
+      <tr>
+        <td class="nm">Tokaji 贵腐酒</td>
+        <td>标「Aszú 3–6 Puttonyos」，数字越高越甜越贵。这是匈牙利国宝级甜酒，本地买价格最优</td>
+        <td>中央市场大厅、机场免税店</td>
+        <td class="pr">¥150–600</td>
+      </tr>
+      <tr>
+        <td class="nm">匈牙利鹅肝酱</td>
+        <td>块状（bloc）比慕斯（mousse）更有口感。罐头装可常温携带，适合托运</td>
+        <td>中央市场大厅</td>
+        <td class="pr">¥60–200</td>
+      </tr>
+      <tr>
+        <td class="nm">Herend 瓷器</td>
+        <td>匈牙利国宝级手绘瓷器，小手工艺品如小摆件、杯碟套组最好带</td>
+        <td>安德拉什大街品牌店、瓦茨街</td>
+        <td class="pr">¥200+</td>
+      </tr>
+    </tbody>
+  </table></div>
+
+  <div class="tip" style="margin-top:16px">
+    <h3><span class="ic">!</span>携带与托运注意</h3>
+    <ul>
+      <li><b>液体与酒类</b>必须托运；免税店买的酒若中转需保持密封袋完好。</li>
+      <li><b>巧克力怕热</b>：10 月气温不高，但全程 9 天要走 4 座城市，最后在布达佩斯买最省心。</li>
+      <li><b>非欧盟退税</b>：单店消费满一定金额可办退税（比利时 €125、荷兰 €50、卢森堡 €74、匈牙利 55,000 HUF 起），需在<span style="color:var(--warn)">最后离境机场办理并出示商品</span>。匈牙利是本次的离境国，退税要在布达佩斯机场完成。</li>
+      <li><b>入境中国限额</b>：酒类免税额度为 1500ml（酒精 12 度以上）或 2 瓶；超额需申报。肉类制品（含部分香肠）禁止携带入境。</li>
+    </ul>
+  </div>
+</section>
+<section id="tips">
+  <div class="sec-head">
+    <div class="sec-num">Module 06</div>
+    <h2>当地贴士</h2>
+    <p class="sec-intro">签证、交通、支付、天气与安全——都是会直接影响行程决策的实用信息，不是泛泛的旅行常识。</p>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">签</span>签证 · 申根（最关键的一项）</h3>
+    <ul>
+      <li><b>办哪国签证：荷兰。</b>Schengen 规则是「向停留<b>夜数最多</b>的国家申请；若夜数相同，向<b>首个入境国</b>申请」。本行程夜数分布为：荷兰 3 晚、比利时 2 晚、卢森堡 1 晚、匈牙利 2 晚，<span style="color:var(--warn)">荷兰最多，因此必须向荷兰使领馆/签证中心递交申请</span>。向其他国家递交属于无效申请。</li>
+      <li><b>办理时长</b>：官方标准为受理后 15 个日历日，旺季可能延长至 45 天。<span style="color:var(--warn)">最早可提前 6 个月递交、建议至少提前 6–8 周</span>。10 月 1 日出发，8 月上旬就应着手准备。</li>
+      <li><b>核心材料</b>：护照（有效期需超过离境日 3 个月以上、至少两页空白）、申请表、符合规格的证件照、<b>全程机票与酒店订单</b>、<b>覆盖全程的申根医疗保险（保额不低于 3 万欧元）</b>、资金证明（银行流水）、在职/在读证明、户口本。</li>
+      <li><b>生物信息采集</b>：首次申请需本人到场录指纹，59 个月内已录过申根指纹的通常可免。</li>
+      <li><b>必须按申请时的行程执行</b>：拿到签证后若行程变动（如减少荷兰夜数），理论上需重新评估。本行程 3 晚荷兰是签证依据，<span style="color:var(--warn)">不要临时改成荷兰只住 1 晚</span>。</li>
+      <li><b>90/180 规则</b>：申根区任意 180 天内累计停留不得超过 90 天。本行程 9 天，远在限额内。</li>
+      <li><b>EES 生物识别系统</b>：2026 年 4 月起已全面运行，首次入境需在口岸采集指纹与人脸、取消护照盖章。<span style="color:var(--warn)">通关时间可能变长</span>，入境当天的后续安排要留出余量。</li>
+      <li><b>ETIAS 不适用</b>：ETIAS 针对免签国公民，中国护照持有人属需签证类别，<span style="color:var(--warn)">不需要也不能申请 ETIAS</span>。</li>
+      <li><b>出行前务必再次核实最新政策</b>：各国签证要求与系统上线时间会调整，以荷兰驻华使领馆、签证中心官网的当期公告为准。</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">假</span>公共假期 · 与你行程的冲突点</h3>
+    <ul>
+      <li><b>德国的「10/03 统一日」不影响本行程</b>（不经德国），但当天全欧铁路会有额外客流。</li>
+      <li><b>中国的国庆黄金周（10/01–10/07）</b>是最大变量：<span style="color:var(--warn)">中国出境游客集中在荷兰、比利时，这几天的阿姆斯特丹住宿与博物馆预约最紧张</span>。机票、酒店、梵高博物馆与安妮之家门票必须尽早锁定。</li>
+      <li><b>荷兰</b>：10 月无全国性假期。<b>比利时</b>：10 月无联邦假期。<b>卢森堡</b>：10 月无全国假期。<b>匈牙利</b>：<span style="color:var(--warn)">10 月 23 日是国庆日（1956 年革命纪念日）</span>，但你在 10/09 已离境，不受影响。不过 10 月上旬布达佩斯会开始为 23 日做布置，部分广场可能围挡。</li>
+      <li><b>10 月 25 日中欧夏令时结束</b>（改回冬令时），你在 10/09 离境，全程都在夏令时内，中欧比北京晚 6 小时——<span style="color:var(--warn)">不需要调表</span>。</li>
+      <li><b>周日商店关门</b>：荷兰与比利时的商店周日普遍 12:00 后才营业，部分小店全天休息。行程中的 10/04 是周日，别把它安排成购物日。</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">车</span>交通 · 四国铁路与市内</h3>
+    <ul>
+      <li><b>全程动线：</b>阿姆斯特丹 →（Eurostar 1h50m / ECD 2h08m）布鲁塞尔 →（IC 3h，每小时一班，无需订座）卢森堡 →（飞机 2h10m）布达佩斯。四段均无需租车。</li>
+      <li><b>阿姆斯特丹 ↔ 布鲁塞尔</b>：Eurostar（原 Thalys）需订座、越早越便宜，提前 2–3 个月可低至 €25–35；Eurocity Direct 不用订座、票价固定，灵活性更好，但到的是 Amsterdam Zuid 而非 Centraal。</li>
+      <li><b>布鲁塞尔 ↔ 卢森堡</b>：比利时国铁 IC 直达，<b>票价固定 €21.30（二等座）、全天任意一班有效</b>，不用提前买也不用订座，售不完。注意末班车。</li>
+      <li><b>卢森堡国内公交全部免费</b>（2026 年仍执行），电车、公交、市内火车直接上车，不用买票。</li>
+      <li><b>阿姆斯特丹市内</b>：GVB 运营电车/地铁/公交，可买 1–7 日票无限次乘坐；也可直接用支持闪付的银行卡刷闸机。上车上闸都要「check in / check out」，漏刷会被按最高票价扣费。</li>
+      <li><b>布鲁塞尔市内</b>：地铁、有轨电车、公交一票通用，有一小时票、天票和「天团体票（可 5 人共用）」。<span style="color:var(--warn)">电车门要自己按按钮开</span>。无票乘车被查到罚款很重。</li>
+      <li><b>布达佩斯市内</b>：地铁 M1–M4 + 2 路有轨电车（沿多瑙河，风景最佳）+ 16 路公交（上城堡山）。<span style="color:var(--warn)">纸质票上车前必须打孔（validate）</span>，买了票忘记打孔会被按逃票处理。两人可买 72 小时团体票。</li>
+      <li><b>布达佩斯机场往返</b>：100E 机场巴士直达 Deák Ferenc tér，约 40 分钟，是最快的方式。打车用 Bolt 或 Főtaxi，机场到市区约 6,000–9,000 HUF。</li>
+      <li><b>跨国列车行李</b>：欧洲列车一般不限件数也无称重，但行李架空间有限；Eurostar 建议把大件放在车厢两端或座位上方。</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">钱</span>支付 · 货币与刷卡</h3>
+    <ul>
+      <li><b>货币三种：</b>荷兰、比利时、卢森堡用<b>欧元（EUR）</b>；匈牙利用<b>福林（HUF）</b>，<span style="color:var(--warn)">匈牙利不用欧元，别只带欧元过去</span>。换算参考：1 元人民币 ≈ 50 福林（速记：福林数去掉两个 0 再乘 2）。</li>
+      <li><b>刷卡覆盖率很高</b>：四国景点、餐厅、商店基本都接受 Visa / Mastercard，<span style="color:var(--warn)">但布达佩斯的街头小吃摊与部分售票窗口仍只收现金</span>，建议随身带 10,000–20,000 HUF 备用。</li>
+      <li><b>取现优于换汇</b>：布达佩斯市区找正规 Change 兑换所或直接用银联/Visa 在 ATM 取现，汇率好过机场与街头兑换点。机场汇率最差。</li>
+      <li><b>动态货币转换（DCC）陷阱</b>：刷卡时若被问「用人民币还是当地货币结算」，<span style="color:var(--warn)">一律选当地货币（EUR/HUF）</span>，选人民币会被加收 3–5% 的转换费。</li>
+      <li><b>小费</b>：荷兰、比利时、卢森堡服务费通常已含在账单里，凑整即可；匈牙利餐厅常见在账单外加 10–15%，结账前看清是否已含服务费。</li>
+      <li><b>退税</b>：四国都是欧盟成员国（匈牙利亦为欧盟国），但退税需在<b>最后离境的欧盟机场</b>办理。本次在布达佩斯机场离境，<span style="color:var(--warn)">所有国家的退税单都必须在布达佩斯机场一次性提交，且要出示商品</span>。</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">天</span>天气与穿搭 · 10 月初</h3>
+    <ul>
+      <li><b>气温区间</b>：阿姆斯特丹 8–15°C、布鲁塞尔 8–16°C、卢森堡 7–15°C、布达佩斯 9–18°C。四地都进入秋季，早晚温差大，布达佩斯白天最暖。</li>
+      <li><b>降水</b>：荷兰与比利时秋雨频繁，多为短时阵雨；卢森堡与布达佩斯降水较少。全程按<b>「薄内搭 + 防风外套 + 一件可收纳的雨衣」</b>打包最实用，欧盟国家雨伞贵且不好带。</li>
+      <li><b>穿搭重点</b>：<span style="color:var(--warn)">布鲁日钟楼 366 级窄台阶、卢森堡要塞隧道、布达城堡山石板路</span>——全程大量石板路与台阶，务必穿好走的鞋，不要穿新鞋。</li>
+      <li><b>泡温泉</b>：塞切尼温泉需自备泳衣与拖鞋，现场租借贵且要排队。带一条速干毛巾。</li>
+      <li><b>防晒</b>：10 月欧陆紫外线已弱，但晴日中午在渔人堡、风景走廊等开阔观景点仍有日照，帽子即可。</li>
+      <li><b>插头</b>：四国均为<b>欧标两圆孔插座（Type C/F）</b>，电压 230V。中国设备需带转换插头；多国转换插头一个通用即可。</li>
+    </ul>
+  </div>
+
+  <div class="tip">
+    <h3><span class="ic">安</span>安全与礼仪</h3>
+    <ul>
+      <li><b>布鲁塞尔是全程防盗重点</b>：大广场周边、中央车站与南站周边扒手较多，<span style="color:var(--warn)">背包背在身前，证件与现金贴身放</span>。有游客在跨国列车上整包被拿走的记录——行李不要放在视线之外的行李架远端，贵重物品随人。</li>
+      <li><b>阿姆斯特丹红灯区</b>：可正常步行穿过，但<span style="color:var(--warn)">严禁对橱窗拍照</span>，拍摄会被制止甚至引发冲突。夜间该区域人杂，两人结伴即可。</li>
+      <li><b>布达佩斯废墟酒吧区</b>：整体治安不差，但周末深夜醉酒年轻人较多，避开明显混乱的场面、看好随身物品。</li>
+      <li><b>餐厅与酒吧</b>：欧洲主要城市的酒吧接受刷卡，但若对方只收现金且不让看账单，换一家。</li>
+      <li><b>礼仪</b>：荷兰与比利时人直接、讲效率，排队与轻声交谈是基本；匈牙利人相对内敛，进店主动打招呼（Jó napot）会受欢迎。餐厅小费非强制但常见。</li>
+      <li><b>紧急电话</b>：欧盟全境统一 <b>112</b>（警察 / 救护 / 消防）。中国驻当地使馆电话建议出行前存入手机。</li>
+      <li><b>证件备份</b>：护照首页、签证页、机票与酒店订单拍照存云端，另存一份纸质复印件随身——丢失时能大幅加快补办与报案。</li>
+      <li><b>保险</b>：申根签证要求医疗保额不低于 3 万欧元，建议同时覆盖行程取消、行李与财物损失。</li>
+    </ul>
+  </div>
+</section>
+<section id="unscheduled">
+  <div class="sec-head">
+    <div class="sec-num">Module 07</div>
+    <h2>未安排的景点清单</h2>
+    <p class="sec-intro">这些地方都值得去，但没能排进每天的动线——有的是顺路度不高，有的是与已选内容重叠，有的是时间实在不够。勾选你感兴趣的，底部按钮会生成一段可以直接粘贴给 AI 的「重排请求」。</p>
+  </div>
+
+  <div id="unschList">
+
+    <label class="unsch">
+      <input type="checkbox" data-name="阿尔克马尔奶酪市场" data-dist="距 Day3 锚点约 40 km" data-dur="1.5 小时" data-addr="Waagplein 2, 1811 JP Alkmaar, 荷兰" data-map="https://www.google.com/maps/search/?api=1&query=Alkmaar+Cheese+Market">
+      <div class="unsch-in">
+        <h4>阿尔克马尔奶酪市场 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Alkmaar Cheese Market</span></h4>
+        <div class="loc">荷兰 · 距 Day3 阿姆斯特丹锚点约 40 km</div>
+        <p class="why">穿古装的搬运工用木杆抬着奶酪在广场上奔跑，配现场拍卖叫价——这是荷兰最完整保留的传统文化表演。仅在<b>周五上午</b>举行。未排入原因：<span>与 Day3 的桑斯安斯风车村同为「荷兰传统民俗」，主题重叠，两者取其一即可。</span></p>
+        <div class="meta-row"><span class="tag time">周五 10:00–12:30</span><span class="tag price">免费围观</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="鹿特丹小孩堤防风车群" data-dist="距 Day3 锚点约 75 km" data-dur="2 小时" data-addr="Nederwaard 1, 2961 AS Kinderdijk, 荷兰" data-map="https://www.google.com/maps/search/?api=1&query=Kinderdijk+Windmills">
+      <div class="unsch-in">
+        <h4>小孩堤防风车群 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Kinderdijk</span></h4>
+        <div class="loc">荷兰 · 距 Day3 阿姆斯特丹锚点约 75 km</div>
+        <p class="why">19 座风车连成一线、世界遗产级的规模感，比桑斯安斯更开阔、更少商业气。可租自行车沿堤骑行。未排入原因：<span>距市中心 75 km，往返需整日，会挤掉阿姆斯特丹本城的一天。</span></p>
+        <div class="meta-row"><span class="tag time">09:00–17:30</span><span class="tag price">约 ¥130</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="喜力啤酒博物馆" data-dist="距 Day2 锚点约 0.5 km" data-dur="2 小时" data-addr="Stadhouderskade 78, 1072 AE Amsterdam, 荷兰" data-map="https://www.google.com/maps/search/?api=1&query=Heineken+Experience+Amsterdam">
+      <div class="unsch-in">
+        <h4>喜力啤酒博物馆 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Heineken Experience</span></h4>
+        <div class="loc">荷兰 · 距 Day2 博物馆广场锚点约 0.5 km</div>
+        <p class="why">位于 1867 年的老酿酒厂内，是互动性很强的品牌体验馆，屋顶露台可看阿姆斯特丹天际线，门票含两杯啤酒。就在博物馆广场南侧。未排入原因：<span>Day2 已被两座顶级博物馆占满，且偏好艺术而非品牌体验的同行者可能兴趣有限。</span></p>
+        <div class="meta-row"><span class="tag time">10:30–19:30</span><span class="tag price">约 ¥195</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="根特老城" data-dist="距 Day5 锚点约 55 km" data-dur="半天" data-addr="9000 Gent, 比利时" data-map="https://www.google.com/maps/search/?api=1&query=Gent+Belgium">
+      <div class="unsch-in">
+        <h4>根特老城 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Gent</span></h4>
+        <div class="loc">比利时 · 距 Day5 布鲁塞尔锚点约 55 km</div>
+        <p class="why">中世纪时欧洲仅次于巴黎的大城，运河、城堡（Gravensteen）、教堂与涂鸦街共存，比布鲁日多了真实的生活气，游客更少、物价更低。未排入原因：<span>与 Day6 的布鲁日同属「比利时中世纪运河老城」，只能取其一；布鲁日交通更直接。</span></p>
+        <div class="meta-row"><span class="tag time">全天</span><span class="tag price">老城免费</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="布鲁塞尔迷你欧洲" data-dist="距 Day5 锚点约 7 km" data-dur="2 小时" data-addr="Av. du Football 1, 1020 Bruxelles, 比利时" data-map="https://www.google.com/maps/search/?api=1&query=Mini+Europe+Bruxelles">
+      <div class="unsch-in">
+        <h4>迷你欧洲 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Mini-Europe</span></h4>
+        <div class="loc">比利时 · 距 Day5 布鲁塞尔锚点约 7 km</div>
+        <p class="why">欧洲著名微缩景观公园，350 座欧洲地标按 1:25 建造，含会动的维苏威火山模型。紧邻原子塔，可一次走完两地。未排入原因：<span>Day5 下午已排原子塔，同日再进迷你欧洲会让晚上回到市中心的时间过晚。</span></p>
+        <div class="meta-row"><span class="tag time">09:30–18:00</span><span class="tag price">约 ¥170</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="维安登城堡" data-dist="距 Day7 锚点约 40 km" data-dur="半天" data-addr="Montée du Château, 9408 Vianden, 卢森堡" data-map="https://www.google.com/maps/search/?api=1&query=Vianden+Castle+Luxembourg">
+      <div class="unsch-in">
+        <h4>维安登城堡 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Château de Vianden</span></h4>
+        <div class="loc">卢森堡 · 距 Day7 卢森堡市锚点约 40 km</div>
+        <p class="why">11–14 世纪的山顶城堡，修复后被认为全球最惊艳的城堡之一，CNN 曾列入世界最美城堡榜。雨果流放期间居于此，写下部分《悲惨世界》。未排入原因：<span>距卢森堡市 40 km 且需整半天，而 Day7 上午要为下午的航班留出余量，时间不够。</span></p>
+        <div class="meta-row"><span class="tag time">10:00–17:00</span><span class="tag price">约 ¥95 + 缆车 ¥48</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="MUDAM 现代艺术馆" data-dist="距 Day7 锚点约 3 km" data-dur="1.5 小时" data-addr="3 Park Dräi Eechelen, 1499 Luxembourg" data-map="https://www.google.com/maps/search/?api=1&query=MUDAM+Luxembourg">
+      <div class="unsch-in">
+        <h4>MUDAM 现代艺术馆 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Musée d'Art Moderne</span></h4>
+        <div class="loc">卢森堡 · 距 Day7 卢森堡市锚点约 3 km</div>
+        <p class="why">贝聿铭 2006 年的作品，建在旧炮台之上，露台正对峡谷，建筑本身比展品更值得看。是老城天际线与当代设计的一次对话。未排入原因：<span>Day7 上午卢森堡的半天已满，且下午要赶飞机，只能舍弃一处。</span></p>
+        <div class="meta-row"><span class="tag time">10:00–18:00 · 周二闭馆</span><span class="tag price">约 ¥64</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="盖勒特山与自由女神像" data-dist="距 Day8 锚点约 2 km" data-dur="2 小时" data-addr="Gellérthegy, 1016 Budapest, 匈牙利" data-map="https://www.google.com/maps/search/?api=1&query=Gellert+Hill+Budapest">
+      <div class="unsch-in">
+        <h4>盖勒特山 · 自由女神像 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Gellérthegy</span></h4>
+        <div class="loc">匈牙利 · 距 Day8 布达佩斯锚点约 2 km</div>
+        <p class="why">布达佩斯最高的观景点（235 米），山顶自由女神像下的观景台能一次收齐多瑙河、链子桥与佩斯全景，视角比渔人堡更完整。山脚还有马赛克装饰的盖勒特浴场。未排入原因：<span>Day8 已排渔人堡 + 国会大厦 + 塞切尼温泉，属同类观景重复，体力也不允许。</span></p>
+        <div class="meta-row"><span class="tag time">全天 · 山顶免费</span><span class="tag price">免费</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="圣安德烈小镇" data-dist="距 Day8 锚点约 20 km" data-dur="半天" data-addr="2000 Szentendre, 匈牙利" data-map="https://www.google.com/maps/search/?api=1&query=Szentendre+Hungary">
+      <div class="unsch-in">
+        <h4>圣安德烈小镇 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Szentendre</span></h4>
+        <div class="loc">匈牙利 · 距 Day8 布达佩斯锚点约 20 km</div>
+        <p class="why">多瑙河湾边的艺术家小镇，塞尔维亚东正教教堂、彩色屋、小画廊与手工艺店密集，从布达佩斯郊区铁路（HÉV）约 40 分钟直达。是脱离大城市节奏的半天。未排入原因：<span>Day8 已满、Day9 中午要赶飞机，只有 10/08 傍晚后的时间可用，而小镇店多在 18:00 关门。</span></p>
+        <div class="meta-row"><span class="tag time">全天 · 店铺约 10:00–18:00</span><span class="tag price">免费入镇</span></div>
+      </div>
+    </label>
+
+    <label class="unsch">
+      <input type="checkbox" data-name="玛格丽特岛" data-dist="距 Day8 锚点约 2.5 km" data-dur="1.5 小时" data-addr="Margaret Island, 1007 Budapest, 匈牙利" data-map="https://www.google.com/maps/search/?api=1&query=Margaret+Island+Budapest">
+      <div class="unsch-in">
+        <h4>玛格丽特岛 <span style="font-weight:400;color:var(--meta);font-size:12.5px">Margaret Island</span></h4>
+        <div class="loc">匈牙利 · 距 Day8 布达佩斯锚点约 2.5 km</div>
+        <p class="why">多瑙河中央 2.5 km 长的绿洲，禁止私家车通行，是市民跑步野餐的日常去处。岛上有音乐喷泉（整点水舞表演）、日式花园与 13 世纪修道院遗址。未排入原因：<span>属于「慢下来」的休闲项，与本次紧凑的 2 天布达佩斯节奏不匹配。</span></p>
+        <div class="meta-row"><span class="tag time">全天</span><span class="tag price">免费</span></div>
+      </div>
+    </label>
+
+  </div>
+
+  <div class="genbox">
+    <h3>生成编辑行程文字</h3>
+    <p>勾选上方你感兴趣的景点（可跨城市多选），点按钮生成一段可直接粘贴给 AI 的结构化请求。这段文字会自包含目的地、天数、时间盒、现有每日主题与你选择的景点清单。</p>
+    <div class="genacts">
+      <button class="btn" onclick="genPrompt()">生成编辑行程文字</button>
+      <button class="btn" onclick="copyPrompt()">复制</button>
+      <span id="genTip" style="font-size:12.5px;color:var(--meta)"></span>
+    </div>
+    <textarea id="genOut" readonly placeholder="勾选景点后点「生成编辑行程文字」，结果会出现在这里……"></textarea>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p><b>荷比卢匈 9 天 8 晚 · 旅行手册</b> ｜ 2026.10.01 — 10.09 ｜ 2 人同行</p>
+    <p>路线：北京 → 阿姆斯特丹（3 晚）→ 布鲁塞尔（2 晚）→ 卢森堡市（1 晚）→ 布达佩斯（2 晚）→ 北京</p>
+    <p>回程：10/09 布达佩斯 BUD 13:00 → 北京首都 T3 次日 04:10 ｜ 国航 CA720 直飞 9h10m</p>
+    <p>申根签证申请国：<b>荷兰</b>（行程中停留夜数最多的国家）</p>
+    <p class="src" style="margin-top:14px">配图来源：Pexels（License 可商用）。景点信息、票价与开放时间来自各景点官网与公开旅行资料整理，价格为写作时点的参考值，出行前请以官方渠道实时信息为准。航班时刻与票价会变动，购票前请以航司官网为准。</p>
+  </div>
+</footer>
+
+<script>
+var NAV_REGION = 'international';
+var NAV_CHAIN = ['google', 'apple'];
+
+var NAV_IN_WEBVIEW = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent)
+  || /MicroMessenger|QQ\//i.test(navigator.userAgent);
+var NAV_IS_MOBILE = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+
+var NAV_PROVIDERS = {
+  google: {
+    web: function(n, lat, lng){ return 'https://www.google.com/maps/search/?api=1&query=' + lat + ',' + lng; },
+    app:  function(n, lat, lng){ return 'comgooglemaps://?q=' + lat + ',' + lng + '&zoom=16'; }
+  },
+  apple: {
+    web: function(n, lat, lng){ return 'https://maps.apple.com/?q=' + lat + ',' + lng; },
+    app:  function(n, lat, lng){ return 'maps://?q=' + lat + ',' + lng; }
+  }
+};
+
+function navTryScheme(url){
+  return new Promise(function(resolve){
+    var t0 = Date.now();
+    var timer = setTimeout(function(){ resolve(Date.now() - t0 < 2300); }, 1400);
+    var ifr = document.createElement('iframe');
+    ifr.style.display = 'none';
+    ifr.src = url;
+    document.body.appendChild(ifr);
+    setTimeout(function(){ if (ifr.parentNode) ifr.parentNode.removeChild(ifr); clearTimeout(timer); resolve(false); }, 1500);
+  });
+}
+
+function openVenueNav(name, lat, lng, webLink){
+  if (!lat || !lng){ window.open(webLink || navAppleFallback(name), '_blank'); return; }
+  var first = NAV_PROVIDERS[NAV_CHAIN[0]];
+  if (NAV_IN_WEBVIEW || !NAV_IS_MOBILE){ window.open(first.web(name, lat, lng), '_blank'); return; }
+  (function step(i){
+    if (i >= NAV_CHAIN.length){ window.open(first.web(name, lat, lng), '_blank'); return; }
+    var p = NAV_PROVIDERS[NAV_CHAIN[i]];
+    if (!p || !p.app){ window.open(NAV_PROVIDERS[NAV_CHAIN[0]].web(name, lat, lng), '_blank'); return; }
+    navTryScheme(p.app(name, lat, lng)).then(function(opened){ if (!opened) step(i + 1); });
+  })(0);
+}
+
+function navAppleFallback(name){
+  return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(name);
+}
+
+/* top nav active state */
+(function(){
+  var links = document.querySelectorAll('.topnav a');
+  var secs = [];
+  links.forEach(function(a){
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) secs.push({ a: a, el: el });
+  });
+  function sync(){
+    var y = window.scrollY + 90, cur = secs[0];
+    secs.forEach(function(s){ if (s.el.offsetTop <= y) cur = s; });
+    links.forEach(function(a){ a.classList.remove('on'); });
+    if (cur) cur.a.classList.add('on');
+  }
+  window.addEventListener('scroll', sync, { passive: true });
+  sync();
+})();
+
+/* checkbox highlight */
+(function(){
+  document.querySelectorAll('.unsch input[type=checkbox]').forEach(function(cb){
+    cb.addEventListener('change', function(){
+      cb.closest('.unsch').classList.toggle('sel', cb.checked);
+    });
+  });
+})();
+
+/* generate AI prompt */
+function genPrompt(){
+  var picked = [];
+  document.querySelectorAll('.unsch input[type=checkbox]:checked').forEach(function(cb){
+    picked.push({
+      name: cb.dataset.name,
+      dist: cb.dataset.dist,
+      dur: cb.dataset.dur,
+      addr: cb.dataset.addr,
+      map: cb.dataset.map
+    });
+  });
+  var out = document.getElementById('genOut');
+  var tip = document.getElementById('genTip');
+  if (!picked.length){ out.value = '请先勾选至少一个未安排的景点。'; tip.textContent = ''; out.focus(); return; }
+
+  var head = [
+    '【行程调整请求 · 来自《荷比卢匈 9 天 8 晚 · 旅行手册》】',
+    '',
+    '请根据以下信息，重新生成一份完整的 7 模块 HTML 旅行手册。',
+    '',
+    '一、行程基本信息',
+    '· 目的地：荷兰、比利时、卢森堡、匈牙利（四国）',
+    '· 总天数：9 天 8 晚（2026.10.01 北京出发 — 10.09 布达佩斯返回北京）',
+    '· 出行人数：2 人，朋友同行，全程双床房（Twin）',
+    '· 默认时间盒：早上 08:00 出发；午餐 13:00–14:30 之间、约 1 小时；晚上可到 22:00–24:00 结束。无老人小孩同行。',
+    '· 区域类型：境外（地图链接用 Google Maps，导航按钮走 Google > Apple 链）',
+    '· 回程已定：10/09 布达佩斯 BUD 13:00 起飞（国航 CA720 直飞，次日 04:10 到北京首都 T3），不可更改',
+    '· 申根签证申请国：荷兰（因荷兰夜数最多）',
+    '',
+    '二、当前每日主题',
+    '· Day1 10/01 北京 → 阿姆斯特丹（长途飞行，落地即休息）',
+    '· Day2 10/02 阿姆斯特丹：国立博物馆 + 梵高博物馆 + 运河游船',
+    '· Day3 10/03 桑斯安斯风车村 + 安妮之家 + 约旦区',
+    '· Day4 10/04 阿姆斯特丹 → 布鲁塞尔（跨国移动 + 大广场夜景）',
+    '· Day5 10/05 布鲁塞尔：皇家美术馆 + 漫画中心 + 原子塔',
+    '· Day6 10/06 布鲁日一日 → 转场卢森堡市',
+    '· Day7 10/07 卢森堡：博克要塞 + 风景走廊 → 飞布达佩斯',
+    '· Day8 10/08 布达佩斯：渔人堡 + 国会大厦 + 塞切尼温泉',
+    '· Day9 10/09 布达佩斯：中央市场 → 午后回国',
+    '',
+    '三、我勾选的、希望排入的景点'
+  ];
+  picked.forEach(function(p, i){
+    head.push((i + 1) + '. ' + p.name);
+    head.push('   位置：' + p.dist);
+    head.push('   建议时长：' + p.dur);
+    head.push('   地址：' + p.addr);
+    head.push('   地图链接：' + p.map);
+  });
+  head.push('');
+  head.push('四、请这样处理');
+  head.push('1. 把以上景点合理安排进某一天。若原行程时间不够，请明确提示「可在第 X 天增加一日安排」，或建议压缩/调整其他某天的哪些景点（点明具体砍掉哪一项）。');
+  head.push('2. 请同时说明这些调整会带来的影响（比如某天的体力强度、是否影响已订的预约时段）。');
+  head.push('3. 重新生成完整的 7 模块 HTML：行程 / 景点 / 体验 / 餐饮住宿 / 购物 / 当地贴士 / 未安排的景点清单，保持同样的语义标注系统与卡片样式。');
+  head.push('4. 保持「一城一个住宿基地、不中途搬家」的原则；若确实需要加一晚，请说明加在哪座城市以及原因。');
+
+  out.value = head.join('\n');
+  tip.textContent = '已生成 ' + picked.length + ' 个景点的重排请求';
+  out.focus();
+  out.select();
+}
+
+function copyPrompt(){
+  var out = document.getElementById('genOut');
+  var tip = document.getElementById('genTip');
+  if (!out.value.trim()){ tip.textContent = '还没有可复制的内容'; return; }
+  out.select();
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  if (!ok && navigator.clipboard){ navigator.clipboard.writeText(out.value).then(function(){ tip.textContent = '已复制到剪贴板'; }); return; }
+  tip.textContent = ok ? '已复制到剪贴板' : '复制失败，请手动选中复制';
+}
+</script>
+</body>
+</html>
